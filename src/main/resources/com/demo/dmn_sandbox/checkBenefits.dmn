@@ -6,11 +6,11 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B" name="Status">
     <dmn:extensionElements/>
-    <dmn:variable id="_755703D9-704A-4DAD-A8B2-565BFBBC6C9A" name="Status"/>
+    <dmn:variable id="_755703D9-704A-4DAD-A8B2-565BFBBC6C9A" name="Status" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_0FC2E90A-C4F0-4B36-B731-931E1E02E08D" name="Benefits">
     <dmn:extensionElements/>
-    <dmn:variable id="_135B5454-619D-477D-9552-4D2EB693B0C2" name="Benefits"/>
+    <dmn:variable id="_135B5454-619D-477D-9552-4D2EB693B0C2" name="Benefits" typeRef="tBenefits"/>
     <dmn:informationRequirement id="_6A39962B-4F1E-4044-B941-972AF147D10B">
       <dmn:requiredInput href="#_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B"/>
     </dmn:informationRequirement>
