@@ -19,6 +19,9 @@
         <dmn:inputExpression id="_6C1CF0FD-BC0D-4A79-A0D7-DA280B8292E5" typeRef="string">
           <dmn:text>Status</dmn:text>
         </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="enumeration" id="_D9D59402-ADFB-40D7-AFC5-7C442F68D78E">
+          <dmn:text>["sdf","dsf"]</dmn:text>
+        </dmn:inputValues>
       </dmn:input>
       <dmn:output id="_E881AE49-AFA1-413E-BDCE-0DDE8790407A" typeRef="tBenefits">
         <dmn:defaultOutputEntry id="_4CE3E7FB-5F8E-421A-9F7E-1B6B38A21F2E">
