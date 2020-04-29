@@ -14,7 +14,7 @@
     <dmn:informationRequirement id="_6A39962B-4F1E-4044-B941-972AF147D10B">
       <dmn:requiredInput href="#_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_23F3F21D-9DED-40F7-A084-0EDF66532AB3" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_23F3F21D-9DED-40F7-A084-0EDF66532AB3" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_31EB8568-C444-44BF-ABB3-EDD8C35EB0DA">
         <dmn:inputExpression id="_6C1CF0FD-BC0D-4A79-A0D7-DA280B8292E5" typeRef="string">
           <dmn:text>Status</dmn:text>
