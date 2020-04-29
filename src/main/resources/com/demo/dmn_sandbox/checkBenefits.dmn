@@ -20,7 +20,11 @@
           <dmn:text>Status</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_E881AE49-AFA1-413E-BDCE-0DDE8790407A" typeRef="tBenefits"/>
+      <dmn:output id="_E881AE49-AFA1-413E-BDCE-0DDE8790407A" typeRef="tBenefits">
+        <dmn:defaultOutputEntry id="_4CE3E7FB-5F8E-421A-9F7E-1B6B38A21F2E">
+          <dmn:text>[]</dmn:text>
+        </dmn:defaultOutputEntry>
+      </dmn:output>
       <dmn:rule id="_6D074887-C200-4997-9730-DCDFB29F5835">
         <dmn:inputEntry id="_1E5250A7-01CA-47BE-AE06-E8E535F8C5EC">
           <dmn:text>"SLIVER"</dmn:text>
