@@ -22,7 +22,7 @@
       </dmn:input>
       <dmn:output id="_E881AE49-AFA1-413E-BDCE-0DDE8790407A" typeRef="tBenefits">
         <dmn:defaultOutputEntry id="_4CE3E7FB-5F8E-421A-9F7E-1B6B38A21F2E">
-          <dmn:text>[]</dmn:text>
+          <dmn:text>null</dmn:text>
         </dmn:defaultOutputEntry>
       </dmn:output>
       <dmn:rule id="_6D074887-C200-4997-9730-DCDFB29F5835">
