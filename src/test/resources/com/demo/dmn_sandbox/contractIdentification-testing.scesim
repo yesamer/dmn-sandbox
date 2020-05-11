@@ -235,7 +235,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Automative&quot;</rawValue>
+            <rawValue class="string">&quot;Automotive&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
