@@ -3,14 +3,14 @@
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_B7754FB1-7C57-418C-964D-F4FC70103D14" name="tContract" isCollection="false">
     <dmn:typeRef>string</dmn:typeRef>
-    <dmn:allowedValues kie:constraintType="enumeration" id="_6D389A49-276E-431C-ACBE-B27749ADFB97">
-      <dmn:text>"Automotive", "Travel Insurance", "Home &amp; Family"</dmn:text>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_B47EB7FC-1B4D-454A-B346-4F38899DBC97">
+      <dmn:text>"Automotive", "Travel Insurance", "Home &amp; Family", null</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_71033640-9248-4075-B9E5-33FDD95643F9" name="tAgreement" isCollection="false">
     <dmn:typeRef>string</dmn:typeRef>
-    <dmn:allowedValues kie:constraintType="enumeration" id="_C3FE4933-F806-4726-B08E-869FA28CFF4C">
-      <dmn:text>"Agreement", "No Agreement"</dmn:text>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_3FE95BF6-2882-44C0-9CF5-081E39B4E3DA">
+      <dmn:text>"Agreement", "No Agreement", null</dmn:text>
     </dmn:allowedValues>
   </dmn:itemDefinition>
   <dmn:itemDefinition id="_BDFC6849-A3A6-4B61-949D-188013165090" name="tIdentification" isCollection="false">
