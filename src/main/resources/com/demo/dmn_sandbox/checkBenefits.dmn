@@ -6,19 +6,65 @@
   </dmn:itemDefinition>
   <dmn:inputData id="_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B" name="Status">
     <dmn:extensionElements/>
-    <dmn:variable id="_755703D9-704A-4DAD-A8B2-565BFBBC6C9A" name="Status"/>
+    <dmn:variable id="_755703D9-704A-4DAD-A8B2-565BFBBC6C9A" name="Status" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_0FC2E90A-C4F0-4B36-B731-931E1E02E08D" name="Benefits">
     <dmn:extensionElements/>
-    <dmn:variable id="_135B5454-619D-477D-9552-4D2EB693B0C2" name="Benefits"/>
+    <dmn:variable id="_135B5454-619D-477D-9552-4D2EB693B0C2" name="Benefits" typeRef="tBenefits"/>
     <dmn:informationRequirement id="_6A39962B-4F1E-4044-B941-972AF147D10B">
       <dmn:requiredInput href="#_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_23F3F21D-9DED-40F7-A084-0EDF66532AB3" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_31EB8568-C444-44BF-ABB3-EDD8C35EB0DA">
+        <dmn:inputExpression id="_6C1CF0FD-BC0D-4A79-A0D7-DA280B8292E5" typeRef="string">
+          <dmn:text>Status</dmn:text>
+        </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="enumeration" id="_D9D59402-ADFB-40D7-AFC5-7C442F68D78E">
+          <dmn:text>["sdf","dsf"]</dmn:text>
+        </dmn:inputValues>
+      </dmn:input>
+      <dmn:output id="_E881AE49-AFA1-413E-BDCE-0DDE8790407A" typeRef="tBenefits">
+        <dmn:defaultOutputEntry id="_4CE3E7FB-5F8E-421A-9F7E-1B6B38A21F2E">
+          <dmn:text>null</dmn:text>
+        </dmn:defaultOutputEntry>
+      </dmn:output>
+      <dmn:rule id="_6D074887-C200-4997-9730-DCDFB29F5835">
+        <dmn:inputEntry id="_1E5250A7-01CA-47BE-AE06-E8E535F8C5EC">
+          <dmn:text>"SLIVER"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E77A1108-3B2B-4515-A936-04E49BBF614B">
+          <dmn:text>["b1","b2","b3"]</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_2C83C7D4-BCFC-432E-B0C9-ADDAD93512BF">
+        <dmn:inputEntry id="_0501AF83-DAEF-4910-A230-0134DDF5B690">
+          <dmn:text>"GOLD"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5A7F9BB7-031D-4BA5-A262-80632B5E771E">
+          <dmn:text>["b1","b2","b3","b4"]</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_E423F739-2D3D-4C22-8A6E-C12D434E2827">
+        <dmn:inputEntry id="_799C5289-38AF-4D93-9C1A-FD48AB2DE692">
+          <dmn:text>"PLATINUM"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E25135DF-E849-4360-894A-BB70774844C7">
+          <dmn:text>["b1","b2","b3","b4","b5"]</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_23F3F21D-9DED-40F7-A084-0EDF66532AB3">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>461.0</kie:width>
+            <kie:width>175.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B" dmnElementRef="_3ED8FC31-51B0-4A43-BAE9-17F69E261D9B" isCollapsed="false">
         <dmndi:DMNStyle>
