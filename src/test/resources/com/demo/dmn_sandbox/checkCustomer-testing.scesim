@@ -54,7 +54,7 @@
           <expressionAlias>Gender</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>251.0</columnWidth>
+          <columnWidth>401.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -78,7 +78,7 @@
           <expressionAlias>Age</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>251.0</columnWidth>
+          <columnWidth>401.66666666666663</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>251.0</columnWidth>
+          <columnWidth>401.66666666666663</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
