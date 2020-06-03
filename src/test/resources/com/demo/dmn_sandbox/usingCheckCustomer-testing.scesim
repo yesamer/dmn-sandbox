@@ -3,7 +3,7 @@
     <scesimModelDescriptor>
       <factMappings>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Index</name>
             <type>OTHER</type>
@@ -15,9 +15,10 @@
           <className>java.lang.Integer</className>
           <factAlias>#</factAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>70.0</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>Description</name>
             <type>OTHER</type>
@@ -29,9 +30,10 @@
           <className>java.lang.String</className>
           <factAlias>Scenario description</factAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>300.0</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Customer</step>
             </ExpressionElement>
@@ -52,9 +54,10 @@
           <expressionAlias>Gender</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>188.25</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Customer</step>
             </ExpressionElement>
@@ -75,9 +78,10 @@
           <expressionAlias>Age</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>188.25</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Communication Channel</step>
             </ExpressionElement>
@@ -95,9 +99,10 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>188.25</columnWidth>
         </FactMapping>
         <FactMapping>
-          <expressionElements class="linked-list">
+          <expressionElements>
             <ExpressionElement>
               <step>Customer Eligibility</step>
             </ExpressionElement>
@@ -115,30 +120,11 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements class="linked-list">
-            <ExpressionElement>
-              <step>Eligibility</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1|5</name>
-            <type>EXPECT</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>Eligibility</name>
-            <className>Eligibility</className>
-          </factIdentifier>
-          <className>boolean</className>
-          <factAlias>Eligibility</factAlias>
-          <expressionAlias>value</expressionAlias>
-          <genericTypes/>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>188.25</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
-    <scesimData class="linked-list">
+    <scesimData>
       <Scenario>
         <factMappingValues>
           <FactMappingValue>
@@ -193,13 +179,14 @@
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
-              <name>Eligibility</name>
-              <className>Eligibility</className>
+              <name>#</name>
+              <className>java.lang.Integer</className>
             </factIdentifier>
             <expressionIdentifier>
-              <name>1|5</name>
-              <type>EXPECT</type>
+              <name>Index</name>
+              <type>OTHER</type>
             </expressionIdentifier>
+            <rawValue class="string">1</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
@@ -209,7 +196,7 @@
     <scesimModelDescriptor>
       <factMappings>
         <FactMapping>
-          <expressionElements class="linked-list"/>
+          <expressionElements/>
           <expressionIdentifier>
             <name>1|1</name>
             <type>GIVEN</type>
@@ -222,10 +209,11 @@
           <factAlias>INSTANCE 1</factAlias>
           <expressionAlias>PROPERTY 1</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+          <columnWidth>114.0</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
-    <scesimData class="linked-list">
+    <scesimData>
       <BackgroundData>
         <factMappingValues>
           <FactMappingValue>
