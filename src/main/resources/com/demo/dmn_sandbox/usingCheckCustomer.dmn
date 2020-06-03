@@ -8,40 +8,26 @@
     <dmn:informationRequirement id="_2022E031-4A2C-4D6E-AB47-D0F4B874D12E">
       <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_DB3F76BE-275E-4104-AACE-478511433F16" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_D10071E4-C307-4E32-AD87-B8E1F5149DA9">
-        <dmn:inputExpression id="_5B490723-84B7-4A29-A99C-6E2B93D34673" typeRef="included2.boolean">
+    <dmn:context id="_63750AAF-0426-489C-BB58-64BDB2BB2E8A">
+      <dmn:contextEntry>
+        <dmn:variable id="_1757A78E-5B36-4F08-B435-1B537B596B0C" name="Customer Eligibility" typeRef="included2.boolean"/>
+        <dmn:literalExpression id="_6BDD41CF-37FB-46DF-B4F7-2D3413258CF2">
           <dmn:text>cc.Eligibility(cc.Customer)</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_5E5CF5A2-5B52-4BD8-90C2-95EC558D6531" typeRef="included2.string"/>
-      <dmn:rule id="_F84237DB-CC7B-4E95-A005-190A8A8D9C99">
-        <dmn:inputEntry id="_5672B537-4C4F-4BB9-96C5-9E1875DFBAA7">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_A0D74887-FA5D-44D9-A597-FC8A7AA43DEB">
-          <dmn:text>"Phone Call"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_32D1D561-7BB5-4721-AD85-72097B061F47">
-        <dmn:inputEntry id="_0E3DF72B-B9D5-465F-8F21-BC54DD95C5B3">
-          <dmn:text>false</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_7F502CF0-CF37-430D-8A04-E4A8540A0299">
-          <dmn:text>"Email"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+    </dmn:context>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_DB3F76BE-275E-4104-AACE-478511433F16">
+          <kie:ComponentWidths dmnElementRef="_63750AAF-0426-489C-BB58-64BDB2BB2E8A">
             <kie:width>50.0</kie:width>
-            <kie:width>279.0</kie:width>
-            <kie:width>181.0</kie:width>
-            <kie:width>204.0</kie:width>
+            <kie:width>185.0</kie:width>
+            <kie:width>363.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_6BDD41CF-37FB-46DF-B4F7-2D3413258CF2">
+            <kie:width>363.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
