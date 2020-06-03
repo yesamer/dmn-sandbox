@@ -5,8 +5,8 @@
   <dmn:decision id="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_E40F6F5B-0F3F-4552-A115-35632B72CF63" name="Communication Channel" typeRef="included2.string"/>
-    <dmn:informationRequirement id="_422AFF5A-2B9A-4797-B2D7-6805C24145E2">
-      <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
+    <dmn:informationRequirement id="_15D3AD6A-22B0-4C3A-948D-E98B69437AF8">
+      <dmn:requiredInput href="#_2E5E90BF-087A-4CEA-A615-54C7DF2169CC"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_DEE1CBC7-184B-4F40-894C-16A7E43B32E8" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_2495647F-9A69-4F9C-8480-9363DD61466C">
@@ -44,6 +44,10 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:inputData id="_2E5E90BF-087A-4CEA-A615-54C7DF2169CC" name="Customer">
+    <dmn:extensionElements/>
+    <dmn:variable id="_D28E77AB-D525-478E-9B2C-DA7ED286EBF0" name="Customer" typeRef="cc.tPerson"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -57,13 +61,13 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_2E5E90BF-087A-4CEA-A615-54C7DF2169CC" dmnElementRef="_2E5E90BF-087A-4CEA-A615-54C7DF2169CC" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="306" y="329" width="100" height="50"/>
+        <dc:Bounds x="306" y="338" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_65959694-0F92-4DD1-9E04-20F4ED1A7C81" dmnElementRef="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" isCollapsed="false">
@@ -75,8 +79,8 @@
         <dc:Bounds x="307" y="235" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_422AFF5A-2B9A-4797-B2D7-6805C24145E2" dmnElementRef="_422AFF5A-2B9A-4797-B2D7-6805C24145E2">
-        <di:waypoint x="356" y="354"/>
+      <dmndi:DMNEdge id="dmnedge-_15D3AD6A-22B0-4C3A-948D-E98B69437AF8" dmnElementRef="_15D3AD6A-22B0-4C3A-948D-E98B69437AF8">
+        <di:waypoint x="356" y="363"/>
         <di:waypoint x="357" y="260"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
