@@ -32,9 +32,14 @@
       </dmn:binding>
       <dmn:binding>
         <dmn:parameter id="_383575BC-A643-47DC-BC07-CC054A41883F" name="parameters"/>
-        <dmn:literalExpression id="_D6C1BE59-BCC3-492B-A384-110D2C58FC7F">
-          <dmn:text></dmn:text>
-        </dmn:literalExpression>
+        <dmn:context id="_9A5911FF-C52A-434F-9155-0A265CCF70B9">
+          <dmn:contextEntry>
+            <dmn:variable id="_7C4E8DA4-7D77-4640-A13E-9663F6FB446C" name="Customer" typeRef="checkCustomerIncluded.tPerson"/>
+            <dmn:literalExpression id="_F752E397-F7B1-43A0-B2B4-E72032B47853">
+              <dmn:text>Customer</dmn:text>
+            </dmn:literalExpression>
+          </dmn:contextEntry>
+        </dmn:context>
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
@@ -80,20 +85,25 @@
           <kie:ComponentWidths dmnElementRef="_403F2727-2A1C-49B2-9C59-397A29EE16FA">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>694.0</kie:width>
+            <kie:width>824.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E62695D-414F-49D8-87E9-F517CE889D54"/>
           <kie:ComponentWidths dmnElementRef="_3DD5C7BE-B5FB-4375-ACAE-F39CE2661B42">
-            <kie:width>694.0</kie:width>
+            <kie:width>824.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5ED5E399-90F7-4AAC-B262-C742F1108749">
-            <kie:width>694.0</kie:width>
+            <kie:width>824.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AA8D051E-89CC-40D0-8AE5-9F2D69472486">
-            <kie:width>694.0</kie:width>
+            <kie:width>824.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_D6C1BE59-BCC3-492B-A384-110D2C58FC7F">
-            <kie:width>694.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_9A5911FF-C52A-434F-9155-0A265CCF70B9">
+            <kie:width>50.0</kie:width>
+            <kie:width>230.0</kie:width>
+            <kie:width>524.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F752E397-F7B1-43A0-B2B4-E72032B47853">
+            <kie:width>524.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1">
             <kie:width>50.0</kie:width>
@@ -118,7 +128,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="217" y="451" width="100" height="50"/>
+        <dc:Bounds x="235" y="441" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_86A5EA10-2F31-4264-98B6-2D963AD9880D" dmnElementRef="_86A5EA10-2F31-4264-98B6-2D963AD9880D" isCollapsed="false">
@@ -131,7 +141,7 @@
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_866A89B6-4319-4087-8D75-9FD57ECC4E1F" dmnElementRef="_866A89B6-4319-4087-8D75-9FD57ECC4E1F">
-        <di:waypoint x="267" y="476"/>
+        <di:waypoint x="285" y="466"/>
         <di:waypoint x="329" y="348"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_52AB5912-31C2-49DF-9602-918E33A71B76" dmnElementRef="_52AB5912-31C2-49DF-9602-918E33A71B76">
