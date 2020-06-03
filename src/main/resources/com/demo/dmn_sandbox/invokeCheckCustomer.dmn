@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_42C44FCF-1989-4ABF-8FD6-681133B8BB26" name="usingCheckCustomer" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE">
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_42C44FCF-1989-4ABF-8FD6-681133B8BB26" name="invokeCheckCustomer" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE">
   <dmn:extensionElements/>
   <dmn:import id="_E8D78CAD-897E-4A55-8462-F1305090379C" name="checkCustomerIncluded" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_60FC5DE7-84E9-4965-8C49-8945B2EFD19D" name="Customer Eligibility">
@@ -122,15 +122,6 @@
         <dc:Bounds x="263" y="301" width="132" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_86A5EA10-2F31-4264-98B6-2D963AD9880D" dmnElementRef="_86A5EA10-2F31-4264-98B6-2D963AD9880D" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="259" y="183" width="139" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_CFD35026-32F8-4499-86C6-1EAD3292977A" dmnElementRef="_CFD35026-32F8-4499-86C6-1EAD3292977A" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -138,6 +129,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="278" y="419" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_86A5EA10-2F31-4264-98B6-2D963AD9880D" dmnElementRef="_86A5EA10-2F31-4264-98B6-2D963AD9880D" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="259" y="183" width="139" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_1C48D4AA-11E3-4E92-B056-593EA51C0984" dmnElementRef="_1C48D4AA-11E3-4E92-B056-593EA51C0984">
