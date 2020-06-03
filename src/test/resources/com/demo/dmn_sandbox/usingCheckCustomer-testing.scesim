@@ -146,6 +146,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">&quot;Male&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -156,6 +157,7 @@
               <name>1|2</name>
               <type>GIVEN</type>
             </expressionIdentifier>
+            <rawValue class="string">45</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -166,6 +168,7 @@
               <name>1|3</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">&quot;Phone Call&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -176,6 +179,7 @@
               <name>1|4</name>
               <type>EXPECT</type>
             </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
