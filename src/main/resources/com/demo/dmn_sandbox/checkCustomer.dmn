@@ -12,11 +12,37 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:decision id="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" name="Eligibility">
+    <dmn:extensionElements/>
+    <dmn:variable id="_ACC4F4ED-964F-4407-9925-4E5997B8C772" name="Eligibility"/>
+  </dmn:decision>
+  <dmn:inputData id="_7E527953-CFF3-486F-8917-B75B5FD8B780" name="Customer">
+    <dmn:extensionElements/>
+    <dmn:variable id="_B74D8E98-51EB-43AE-BC18-B9F3A2547BC7" name="Customer" typeRef="tPerson"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension/>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="392" y="207" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="391" y="331" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
