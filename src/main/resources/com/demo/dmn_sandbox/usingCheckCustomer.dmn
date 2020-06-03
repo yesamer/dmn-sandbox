@@ -4,15 +4,46 @@
   <dmn:import id="_DA58EADD-EB45-488C-ABF7-4BDB583D6059" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" name="Communication Channel">
     <dmn:extensionElements/>
-    <dmn:variable id="_E40F6F5B-0F3F-4552-A115-35632B72CF63" name="Communication Channel"/>
+    <dmn:variable id="_E40F6F5B-0F3F-4552-A115-35632B72CF63" name="Communication Channel" typeRef="included2.string"/>
     <dmn:informationRequirement id="_2022E031-4A2C-4D6E-AB47-D0F4B874D12E">
       <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_DB3F76BE-275E-4104-AACE-478511433F16" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_D10071E4-C307-4E32-AD87-B8E1F5149DA9">
+        <dmn:inputExpression id="_5B490723-84B7-4A29-A99C-6E2B93D34673" typeRef="included2.boolean">
+          <dmn:text>cc.Eligibility(cc.Customer)</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_5E5CF5A2-5B52-4BD8-90C2-95EC558D6531" typeRef="included2.string"/>
+      <dmn:rule id="_F84237DB-CC7B-4E95-A005-190A8A8D9C99">
+        <dmn:inputEntry id="_5672B537-4C4F-4BB9-96C5-9E1875DFBAA7">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A0D74887-FA5D-44D9-A597-FC8A7AA43DEB">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_32D1D561-7BB5-4721-AD85-72097B061F47">
+        <dmn:inputEntry id="_0E3DF72B-B9D5-465F-8F21-BC54DD95C5B3">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7F502CF0-CF37-430D-8A04-E4A8540A0299">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_DB3F76BE-275E-4104-AACE-478511433F16">
+            <kie:width>50.0</kie:width>
+            <kie:width>279.0</kie:width>
+            <kie:width>181.0</kie:width>
+            <kie:width>204.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_65959694-0F92-4DD1-9E04-20F4ED1A7C81" dmnElementRef="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -21,6 +52,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="307" y="235" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="448" y="700" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
