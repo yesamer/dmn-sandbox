@@ -5,32 +5,35 @@
   <dmn:decision id="_60FC5DE7-84E9-4965-8C49-8945B2EFD19D" name="Decision-1">
     <dmn:extensionElements/>
     <dmn:variable id="_15DD5EDF-DE52-4236-A4C1-57B6D81D7B08" name="Decision-1"/>
+    <dmn:informationRequirement id="_95BA5910-1AB2-44CE-8DD8-7DDD7384295A">
+      <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
+    </dmn:informationRequirement>
     <dmn:invocation id="_403F2727-2A1C-49B2-9C59-397A29EE16FA">
       <dmn:literalExpression id="_3E62695D-414F-49D8-87E9-F517CE889D54">
         <dmn:text>invoke</dmn:text>
       </dmn:literalExpression>
       <dmn:binding>
-        <dmn:parameter id="_369397ED-C987-43C5-8FB8-9A21D4795165" name="namespace"/>
+        <dmn:parameter id="_369397ED-C987-43C5-8FB8-9A21D4795165" name="namespace" typeRef="string"/>
         <dmn:literalExpression id="_3DD5C7BE-B5FB-4375-ACAE-F39CE2661B42">
-          <dmn:text></dmn:text>
+          <dmn:text>"https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5"</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
       <dmn:binding>
-        <dmn:parameter id="_1768D1E1-4693-45C0-9E1F-952006E6615A" name="model name"/>
+        <dmn:parameter id="_1768D1E1-4693-45C0-9E1F-952006E6615A" name="model name" typeRef="string"/>
         <dmn:literalExpression id="_5ED5E399-90F7-4AAC-B262-C742F1108749">
-          <dmn:text></dmn:text>
+          <dmn:text>"checkCustomer"</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
       <dmn:binding>
-        <dmn:parameter id="_D1D2FECE-1C52-4AD4-8456-92FFF9D3FD01" name="decision name"/>
+        <dmn:parameter id="_D1D2FECE-1C52-4AD4-8456-92FFF9D3FD01" name="decision name" typeRef="string"/>
         <dmn:literalExpression id="_AA8D051E-89CC-40D0-8AE5-9F2D69472486">
-          <dmn:text></dmn:text>
+          <dmn:text>"Eligibility"</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
       <dmn:binding>
         <dmn:parameter id="_383575BC-A643-47DC-BC07-CC054A41883F" name="parameters"/>
         <dmn:literalExpression id="_D6C1BE59-BCC3-492B-A384-110D2C58FC7F">
-          <dmn:text></dmn:text>
+          <dmn:text>checkCustomerIncluded.Customer</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
     </dmn:invocation>
@@ -38,6 +41,9 @@
   <dmn:decision id="_86A5EA10-2F31-4264-98B6-2D963AD9880D" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_48D23A22-6CE2-4529-8C2B-A261F26DEF5B" name="Communication Channel" typeRef="string"/>
+    <dmn:informationRequirement id="_52AB5912-31C2-49DF-9602-918E33A71B76">
+      <dmn:requiredDecision href="#_60FC5DE7-84E9-4965-8C49-8945B2EFD19D"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_41E959A0-9AE4-49C9-A428-607DB9501663">
         <dmn:inputExpression id="_D7628D4F-3FF3-4C26-95C8-6D7FDDC1BBC8" typeRef="boolean">
@@ -70,20 +76,20 @@
           <kie:ComponentWidths dmnElementRef="_403F2727-2A1C-49B2-9C59-397A29EE16FA">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>300.0</kie:width>
+            <kie:width>694.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3E62695D-414F-49D8-87E9-F517CE889D54"/>
           <kie:ComponentWidths dmnElementRef="_3DD5C7BE-B5FB-4375-ACAE-F39CE2661B42">
-            <kie:width>300.0</kie:width>
+            <kie:width>694.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5ED5E399-90F7-4AAC-B262-C742F1108749">
-            <kie:width>300.0</kie:width>
+            <kie:width>694.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_AA8D051E-89CC-40D0-8AE5-9F2D69472486">
-            <kie:width>300.0</kie:width>
+            <kie:width>694.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D6C1BE59-BCC3-492B-A384-110D2C58FC7F">
-            <kie:width>300.0</kie:width>
+            <kie:width>694.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1">
             <kie:width>50.0</kie:width>
@@ -99,7 +105,16 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="305" y="327" width="100" height="50"/>
+        <dc:Bounds x="279" y="330" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="279" y="498" width="227" height="55"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_86A5EA10-2F31-4264-98B6-2D963AD9880D" dmnElementRef="_86A5EA10-2F31-4264-98B6-2D963AD9880D" isCollapsed="false">
@@ -111,6 +126,14 @@
         <dc:Bounds x="259" y="182" width="139" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_95BA5910-1AB2-44CE-8DD8-7DDD7384295A" dmnElementRef="_95BA5910-1AB2-44CE-8DD8-7DDD7384295A">
+        <di:waypoint x="392.5" y="525.5"/>
+        <di:waypoint x="329" y="380"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_52AB5912-31C2-49DF-9602-918E33A71B76" dmnElementRef="_52AB5912-31C2-49DF-9602-918E33A71B76">
+        <di:waypoint x="329" y="355"/>
+        <di:waypoint x="328.5" y="232"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
