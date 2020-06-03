@@ -15,6 +15,32 @@
           <dmn:text>cc.Eligibility(cc.Customer)</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:decisionTable id="_2DD990AD-0206-4BEA-8E43-5104D7E12D8C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+          <dmn:input id="_1A7DAC7B-2BEC-40ED-BC21-D5DB27D4F100">
+            <dmn:inputExpression id="_92FD730C-ADB6-460D-828A-FEBD8D042B40" typeRef="included2.boolean">
+              <dmn:text>Customer Eligibility</dmn:text>
+            </dmn:inputExpression>
+          </dmn:input>
+          <dmn:output id="_1E1FCB2B-E46F-4D9D-9B62-71E772EC8626" typeRef="included2.string"/>
+          <dmn:rule id="_4185D8EE-9F9D-4816-A0AA-75C083730CA1">
+            <dmn:inputEntry id="_889D4A1B-5A50-434D-94B4-3B27909C3C85">
+              <dmn:text>true</dmn:text>
+            </dmn:inputEntry>
+            <dmn:outputEntry id="_68D80CDB-B86F-4498-B33D-9505EC660CD9">
+              <dmn:text>"Phone Call"</dmn:text>
+            </dmn:outputEntry>
+          </dmn:rule>
+          <dmn:rule id="_A6E9A3DB-7397-4BEB-B004-44DED785DE2E">
+            <dmn:inputEntry id="_1BC7D3D1-ACF7-4172-B9F8-9BBF74F539B7">
+              <dmn:text>false</dmn:text>
+            </dmn:inputEntry>
+            <dmn:outputEntry id="_BCB78BB9-6382-456F-85CF-F21A2FDD7505">
+              <dmn:text>"Email"</dmn:text>
+            </dmn:outputEntry>
+          </dmn:rule>
+        </dmn:decisionTable>
+      </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
   <dmndi:DMNDI>
@@ -24,10 +50,16 @@
           <kie:ComponentWidths dmnElementRef="_63750AAF-0426-489C-BB58-64BDB2BB2E8A">
             <kie:width>50.0</kie:width>
             <kie:width>185.0</kie:width>
-            <kie:width>363.0</kie:width>
+            <kie:width>519.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6BDD41CF-37FB-46DF-B4F7-2D3413258CF2">
-            <kie:width>363.0</kie:width>
+            <kie:width>519.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_2DD990AD-0206-4BEA-8E43-5104D7E12D8C">
+            <kie:width>50.0</kie:width>
+            <kie:width>163.0</kie:width>
+            <kie:width>186.0</kie:width>
+            <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
