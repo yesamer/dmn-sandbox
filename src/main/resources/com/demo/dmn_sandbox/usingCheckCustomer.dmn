@@ -8,57 +8,51 @@
     <dmn:informationRequirement id="_83D59990-2F3D-427B-A9A9-81C3D43BCC12">
       <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
-    <dmn:context id="_63750AAF-0426-489C-BB58-64BDB2BB2E8A">
-      <dmn:contextEntry>
-        <dmn:variable id="_1757A78E-5B36-4F08-B435-1B537B596B0C" name="Customer Eligibility" typeRef="included2.boolean"/>
-        <dmn:literalExpression id="_6BDD41CF-37FB-46DF-B4F7-2D3413258CF2">
-          <dmn:text>cc.Eligibility(cc.Customer)</dmn:text>
-        </dmn:literalExpression>
-      </dmn:contextEntry>
-      <dmn:contextEntry>
-        <dmn:decisionTable id="_2DD990AD-0206-4BEA-8E43-5104D7E12D8C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-          <dmn:input id="_1A7DAC7B-2BEC-40ED-BC21-D5DB27D4F100">
-            <dmn:inputExpression id="_92FD730C-ADB6-460D-828A-FEBD8D042B40" typeRef="included2.boolean">
-              <dmn:text>Customer Eligibility</dmn:text>
-            </dmn:inputExpression>
-          </dmn:input>
-          <dmn:output id="_1E1FCB2B-E46F-4D9D-9B62-71E772EC8626" typeRef="included2.string"/>
-          <dmn:rule id="_4185D8EE-9F9D-4816-A0AA-75C083730CA1">
-            <dmn:inputEntry id="_889D4A1B-5A50-434D-94B4-3B27909C3C85">
-              <dmn:text>true</dmn:text>
-            </dmn:inputEntry>
-            <dmn:outputEntry id="_68D80CDB-B86F-4498-B33D-9505EC660CD9">
-              <dmn:text>"Phone Call"</dmn:text>
-            </dmn:outputEntry>
-          </dmn:rule>
-          <dmn:rule id="_A6E9A3DB-7397-4BEB-B004-44DED785DE2E">
-            <dmn:inputEntry id="_1BC7D3D1-ACF7-4172-B9F8-9BBF74F539B7">
-              <dmn:text>false</dmn:text>
-            </dmn:inputEntry>
-            <dmn:outputEntry id="_BCB78BB9-6382-456F-85CF-F21A2FDD7505">
-              <dmn:text>"Email"</dmn:text>
-            </dmn:outputEntry>
-          </dmn:rule>
-        </dmn:decisionTable>
-      </dmn:contextEntry>
-    </dmn:context>
+    <dmn:decisionTable id="_DEE1CBC7-184B-4F40-894C-16A7E43B32E8" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_2495647F-9A69-4F9C-8480-9363DD61466C">
+        <dmn:inputExpression id="_440ABE81-1D3F-4E37-9786-45EFE28881F8" typeRef="number">
+          <dmn:text>cc.Customer.cc.Age</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_6C50D4CF-B5C3-47A0-B778-1100786A193A">
+        <dmn:inputExpression id="_170ADF09-3088-45F1-9A27-53FDBDCFA6B4" typeRef="string">
+          <dmn:text>cc.Customer.cc.Gender</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_87AAC3AD-520A-4D81-B062-FC800E2CAC14" typeRef="included2.string"/>
+      <dmn:rule id="_5626D545-D124-47C5-B015-0FA7D3BA8FB9">
+        <dmn:inputEntry id="_B9BC268C-8730-4CBF-93F1-4063BA2BC52E">
+          <dmn:text> > 18</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_D5BA87BF-C0C2-4F7A-BC16-7E49671662CF">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_273E766D-8D29-4C73-8A9F-C4964A8E5749">
+          <dmn:text>"Hey"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_D7563F13-0F2D-4B19-97AC-88F14264D33E">
+        <dmn:inputEntry id="_5A865F56-8BB3-4C0C-8006-6E1F053B267E">
+          <dmn:text>&lt;= 18</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_E7644221-6039-490F-B8EF-69ED13116942">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_7A470793-9486-4367-A550-E8DC640D4438">
+          <dmn:text>"Yo"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_63750AAF-0426-489C-BB58-64BDB2BB2E8A">
+          <kie:ComponentWidths dmnElementRef="_DEE1CBC7-184B-4F40-894C-16A7E43B32E8">
             <kie:width>50.0</kie:width>
-            <kie:width>185.0</kie:width>
-            <kie:width>519.0</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_6BDD41CF-37FB-46DF-B4F7-2D3413258CF2">
-            <kie:width>519.0</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_2DD990AD-0206-4BEA-8E43-5104D7E12D8C">
-            <kie:width>50.0</kie:width>
-            <kie:width>163.0</kie:width>
-            <kie:width>186.0</kie:width>
+            <kie:width>219.0</kie:width>
+            <kie:width>202.0</kie:width>
+            <kie:width>195.0</kie:width>
             <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
