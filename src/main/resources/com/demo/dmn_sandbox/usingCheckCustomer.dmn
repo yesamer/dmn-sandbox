@@ -5,9 +5,6 @@
   <dmn:decision id="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_E40F6F5B-0F3F-4552-A115-35632B72CF63" name="Communication Channel" typeRef="included2.string"/>
-    <dmn:informationRequirement id="_3D12B121-32FA-491F-AC5E-3202DA1F6CA7">
-      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_83D59990-2F3D-427B-A9A9-81C3D43BCC12">
       <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
@@ -72,7 +69,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="163" y="359" width="100" height="50"/>
+        <dc:Bounds x="316" y="378" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_65959694-0F92-4DD1-9E04-20F4ED1A7C81" dmnElementRef="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" isCollapsed="false">
@@ -84,21 +81,8 @@
         <dc:Bounds x="307" y="235" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="355" y="383" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_3D12B121-32FA-491F-AC5E-3202DA1F6CA7" dmnElementRef="_3D12B121-32FA-491F-AC5E-3202DA1F6CA7">
-        <di:waypoint x="405" y="408"/>
-        <di:waypoint x="357" y="285"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_83D59990-2F3D-427B-A9A9-81C3D43BCC12" dmnElementRef="_83D59990-2F3D-427B-A9A9-81C3D43BCC12">
-        <di:waypoint x="213" y="384"/>
+        <di:waypoint x="366" y="403"/>
         <di:waypoint x="357" y="260"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
