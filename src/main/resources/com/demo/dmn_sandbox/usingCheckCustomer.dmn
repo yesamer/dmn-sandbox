@@ -5,9 +5,6 @@
   <dmn:decision id="_86A5EA10-2F31-4264-98B6-2D963AD9880D" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_48D23A22-6CE2-4529-8C2B-A261F26DEF5B" name="Communication Channel" typeRef="string"/>
-    <dmn:informationRequirement id="_F156C057-BE75-4C21-8B6E-836D85C1DD41">
-      <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
-    </dmn:informationRequirement>
     <dmn:decisionTable id="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_41E959A0-9AE4-49C9-A428-607DB9501663">
         <dmn:inputExpression id="_D7628D4F-3FF3-4C26-95C8-6D7FDDC1BBC8" typeRef="boolean">
@@ -45,15 +42,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="254" y="320" width="158" height="72"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_86A5EA10-2F31-4264-98B6-2D963AD9880D" dmnElementRef="_86A5EA10-2F31-4264-98B6-2D963AD9880D" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -63,10 +51,6 @@
         <dc:Bounds x="259" y="182" width="139" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_F156C057-BE75-4C21-8B6E-836D85C1DD41" dmnElementRef="_F156C057-BE75-4C21-8B6E-836D85C1DD41">
-        <di:waypoint x="333" y="356"/>
-        <di:waypoint x="328.5" y="207"/>
-      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
