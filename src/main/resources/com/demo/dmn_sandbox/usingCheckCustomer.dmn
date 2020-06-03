@@ -8,11 +8,42 @@
     <dmn:informationRequirement id="_4971B4BA-7478-4F5E-A809-3893836E1FB2">
       <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_41E959A0-9AE4-49C9-A428-607DB9501663">
+        <dmn:inputExpression id="_D7628D4F-3FF3-4C26-95C8-6D7FDDC1BBC8" typeRef="boolean">
+          <dmn:text>checkCustomerIncluded.Eligibility</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_EE487A49-0EC8-457C-8503-1D583FFB5AEF" typeRef="string"/>
+      <dmn:rule id="_DAE4E35D-9D51-4522-BC88-A5E5B00222F9">
+        <dmn:inputEntry id="_6C415876-7620-4018-BD8E-ED5CE544E7E3">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_D45CC391-A902-4FEA-9106-140714D3AA7F">
+          <dmn:text>"Phone Call"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_843C9C5A-C1D2-403A-A71F-C7DD58A79583">
+        <dmn:inputEntry id="_6790BD88-2404-4370-B80C-9857DE280ABE">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C8202950-C5A3-4101-B9F2-E9B4914745E3">
+          <dmn:text>"Email"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_E073F9AF-4F85-45DD-9E13-85AB7479C2F1">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>372.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-included1:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included1:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
         <dmndi:DMNStyle>
