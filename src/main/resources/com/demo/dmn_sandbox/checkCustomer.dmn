@@ -18,6 +18,56 @@
     <dmn:informationRequirement id="_AB114E90-C7FA-4FAA-873A-A77F61BBCA78">
       <dmn:requiredInput href="#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_53C1B590-CD3E-4268-9CB5-48C4FB848659" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_AE6F65A6-4033-4E24-B526-D8F2E422D715">
+        <dmn:inputExpression id="_17A1159B-19BE-4E17-A2FE-ABB89DD6E4A4" typeRef="number">
+          <dmn:text>Customer.Age</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_12621153-121A-4254-84F3-83B0C5B59ADD">
+        <dmn:inputExpression id="_2E5D8C1F-49EF-48A8-8038-15B2CD3A57F5" typeRef="string">
+          <dmn:text>Customer.Gender</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_8238F904-B199-4890-B00E-02E759DB53C8" typeRef="boolean">
+        <dmn:defaultOutputEntry id="_380100E8-288D-4099-AFE9-98D610F22348">
+          <dmn:text>false</dmn:text>
+        </dmn:defaultOutputEntry>
+      </dmn:output>
+      <dmn:rule id="_C8DDDEA4-42EA-4DC1-9853-580ECD195B33">
+        <dmn:inputEntry id="_F8D9B53A-8FDB-4A11-9762-9A860A9249E3">
+          <dmn:text>&gt; 18</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_637BB544-09DD-4FD9-B86B-02AD5E5FEA0B">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5BFCE71B-DE7B-4FBC-B748-E27135EA5B26">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_420DBCA9-2555-44DD-8DDA-E8E7529F024D">
+        <dmn:inputEntry id="_99F39DF1-D96E-4416-B99C-20FAB9F191FC">
+          <dmn:text>[18 .. 70 ]</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F385066F-88AF-446A-A6B5-8694021FC2D9">
+          <dmn:text>Male, Female, Other</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1AEBA40A-6087-476A-A95E-D3C737F80461">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_273FF958-99F0-499C-98E7-B30E33B6F265">
+        <dmn:inputEntry id="_A4C97258-9A87-4D26-A239-58AF1DDEF777">
+          <dmn:text>&lt; 70</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_584B95AD-1E7A-48D1-BC40-5B06F120CA49">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1EA5D3DF-C565-4D07-A628-E4DDF5EFB963">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_7E527953-CFF3-486F-8917-B75B5FD8B780" name="Customer">
     <dmn:extensionElements/>
@@ -26,7 +76,15 @@
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_53C1B590-CD3E-4268-9CB5-48C4FB848659">
+            <kie:width>50.0</kie:width>
+            <kie:width>144.0</kie:width>
+            <kie:width>188.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
         <dmndi:DMNStyle>
