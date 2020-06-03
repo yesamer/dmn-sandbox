@@ -33,7 +33,7 @@
       <dmn:binding>
         <dmn:parameter id="_383575BC-A643-47DC-BC07-CC054A41883F" name="parameters"/>
         <dmn:literalExpression id="_D6C1BE59-BCC3-492B-A384-110D2C58FC7F">
-          <dmn:text>Customer</dmn:text>
+          <dmn:text></dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
     </dmn:invocation>
