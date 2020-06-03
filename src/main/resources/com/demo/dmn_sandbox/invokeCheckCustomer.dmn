@@ -45,7 +45,7 @@
   </dmn:decision>
   <dmn:inputData id="_CFD35026-32F8-4499-86C6-1EAD3292977A" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_9E1AD905-84FE-4274-A746-5BD7C9C5D001" name="Customer"/>
+    <dmn:variable id="_9E1AD905-84FE-4274-A746-5BD7C9C5D001" name="Customer" typeRef="cc.tPerson"/>
   </dmn:inputData>
   <dmn:decision id="_86A5EA10-2F31-4264-98B6-2D963AD9880D" name="Communication Channel">
     <dmn:extensionElements/>
