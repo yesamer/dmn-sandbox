@@ -50,7 +50,7 @@
           <dmn:text>[18..70]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_F385066F-88AF-446A-A6B5-8694021FC2D9">
-          <dmn:text>[Male, Female, Other]</dmn:text>
+          <dmn:text>Male</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_1AEBA40A-6087-476A-A95E-D3C737F80461">
           <dmn:text>true</dmn:text>
