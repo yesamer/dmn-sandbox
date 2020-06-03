@@ -4,7 +4,7 @@
   <dmn:import id="_E8D78CAD-897E-4A55-8462-F1305090379C" name="checkCustomerIncluded" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_60FC5DE7-84E9-4965-8C49-8945B2EFD19D" name="Decision-1">
     <dmn:extensionElements/>
-    <dmn:variable id="_15DD5EDF-DE52-4236-A4C1-57B6D81D7B08" name="Decision-1"/>
+    <dmn:variable id="_15DD5EDF-DE52-4236-A4C1-57B6D81D7B08" name="Decision-1" typeRef="boolean"/>
     <dmn:informationRequirement id="_95BA5910-1AB2-44CE-8DD8-7DDD7384295A">
       <dmn:requiredInput href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
