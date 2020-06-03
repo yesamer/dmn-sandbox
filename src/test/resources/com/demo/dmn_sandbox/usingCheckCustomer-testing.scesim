@@ -54,7 +54,7 @@
           <expressionAlias>Gender</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>150.6</columnWidth>
+          <columnWidth>225.71268656716416</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -78,7 +78,7 @@
           <expressionAlias>Age</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>150.6</columnWidth>
+          <columnWidth>225.71268656716416</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>201.6</columnWidth>
+          <columnWidth>302.14925373134326</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -120,7 +120,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>150.6</columnWidth>
+          <columnWidth>225.71268656716416</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -141,7 +141,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>150.6</columnWidth>
+          <columnWidth>225.71268656716416</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
