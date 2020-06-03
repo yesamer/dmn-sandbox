@@ -60,6 +60,15 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="included1:_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="163" y="359" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_65959694-0F92-4DD1-9E04-20F4ED1A7C81" dmnElementRef="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -67,6 +76,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="307" y="235" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="303" y="471" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
     </dmndi:DMNDiagram>
