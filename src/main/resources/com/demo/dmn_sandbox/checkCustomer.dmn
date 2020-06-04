@@ -14,7 +14,7 @@
   </dmn:itemDefinition>
   <dmn:decision id="_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" name="Greeting">
     <dmn:extensionElements/>
-    <dmn:variable id="_E95CD366-FA8E-4ED9-8EBA-8D1294C6FE5A" name="Greeting"/>
+    <dmn:variable id="_E95CD366-FA8E-4ED9-8EBA-8D1294C6FE5A" name="Greeting" typeRef="string"/>
     <dmn:informationRequirement id="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
       <dmn:requiredInput href="#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
