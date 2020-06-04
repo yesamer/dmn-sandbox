@@ -15,19 +15,24 @@
     <dmn:informationRequirement id="_DEBE6DE2-C0F5-4091-9A0F-8B3340295F30">
       <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement id="_5C0BA88C-6643-4122-80FB-AEC4E006F82A">
-      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
-    </dmn:informationRequirement>
     <dmn:decisionTable id="_D9414916-5DFF-47F3-9335-E26F7C5B658B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_6648F9FC-DAC1-4614-8B9F-7CC471CA1839">
         <dmn:inputExpression id="_A692637D-AAF0-4F64-82AB-A4AA5C6C7FC4" typeRef="boolean">
           <dmn:text>input-1</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_AC176901-58B1-421F-94CF-E4542907B51F">
+        <dmn:inputExpression id="_809C2123-530C-4560-8CEC-B2CEE06EBBBE">
+          <dmn:text>cc.Decision-1</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_1002067B-0F9B-4748-B530-56DF49DEFCDF" typeRef="string"/>
       <dmn:rule id="_52FE5613-336E-4937-8320-29697887DF39">
         <dmn:inputEntry id="_AE20FF58-D5F7-4127-AAB3-F8655FCC2E14">
           <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_3F3BCE6D-2035-4DC0-8E44-943DB7DC9276">
+          <dmn:text>"yo"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C76F3C48-0CC9-413C-9AE8-A13D636A7832">
           <dmn:text>"Phone Call"</dmn:text>
@@ -36,6 +41,9 @@
       <dmn:rule id="_9D581B83-4EA7-4A03-A91F-12036E9C0EE3">
         <dmn:inputEntry id="_A66FB872-22A0-4B95-AB29-E29A8F176BFF">
           <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_D661FE05-C3AA-4A83-8D60-7DB3FC87A17A">
+          <dmn:text>"hey"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A4704A0B-8918-482C-9BB4-C0E93F8F3ADC">
           <dmn:text>"Email"</dmn:text>
@@ -50,6 +58,7 @@
           <kie:ComponentWidths dmnElementRef="_D9414916-5DFF-47F3-9335-E26F7C5B658B">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>214.0</kie:width>
             <kie:width>281.0</kie:width>
           </kie:ComponentWidths>
@@ -61,16 +70,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="457" y="384" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="647" y="248" width="100" height="50"/>
+        <dc:Bounds x="558" y="295" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_80EA3F06-6955-4BC3-B29D-C2D944458885" dmnElementRef="_80EA3F06-6955-4BC3-B29D-C2D944458885" isCollapsed="false">
@@ -96,11 +96,7 @@
         <di:waypoint x="460" y="157"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_DEBE6DE2-C0F5-4091-9A0F-8B3340295F30" dmnElementRef="_DEBE6DE2-C0F5-4091-9A0F-8B3340295F30">
-        <di:waypoint x="507" y="409"/>
-        <di:waypoint x="460" y="157"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_5C0BA88C-6643-4122-80FB-AEC4E006F82A" dmnElementRef="_5C0BA88C-6643-4122-80FB-AEC4E006F82A">
-        <di:waypoint x="697" y="273"/>
+        <di:waypoint x="608" y="320"/>
         <di:waypoint x="460" y="157"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
