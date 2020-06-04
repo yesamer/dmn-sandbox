@@ -8,11 +8,42 @@
     <dmn:informationRequirement id="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
       <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_A97E7AD5-9FD2-4764-B8E6-0DD053A37CC5" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_699754BD-786A-4A4D-B4BD-C19E02B95029">
+        <dmn:inputExpression id="_07B4C541-B18E-4D34-ACC1-8DA1128BF5BA" typeRef="included2.boolean">
+          <dmn:text>cc.Eligibility</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_E1256021-29C4-491C-AFB5-B5ABD7EC3810" typeRef="string"/>
+      <dmn:rule id="_6AB91670-3246-40C3-ABC8-FDA3E84BFAF4">
+        <dmn:inputEntry id="_68FF6C77-FE09-445A-B65C-6D30DD1013EC">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_5299D956-725F-4161-8B74-B43480DF53A4">
+          <dmn:text>"Email"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_05A9AE46-1FE5-4B87-AE07-511CE42C77D1">
+        <dmn:inputEntry id="_DA8A7D91-9E50-4A14-A567-1B0FE6CE61A9">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_196C1806-90C9-40ED-80C6-BE0F85F54380">
+          <dmn:text>"Phone Call"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_A97E7AD5-9FD2-4764-B8E6-0DD053A37CC5">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>268.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
         <dmndi:DMNStyle>
