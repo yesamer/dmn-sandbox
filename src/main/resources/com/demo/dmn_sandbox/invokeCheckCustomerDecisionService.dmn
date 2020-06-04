@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_42C44FCF-1989-4ABF-8FD6-681133B8BB26" name="invokeCheckCustomer" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE">
   <dmn:extensionElements/>
-  <dmn:import id="_9717FAD6-EB71-4058-9AD6-81AC0FF50E5F" name="cc1" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
+  <dmn:import id="_BFF6856D-ABC2-4A8C-949B-65A939FF4567" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_60FC5DE7-84E9-4965-8C49-8945B2EFD19D" name="Customer Eligibility">
     <dmn:extensionElements/>
     <dmn:variable id="_15DD5EDF-DE52-4236-A4C1-57B6D81D7B08" name="Customer Eligibility" typeRef="boolean"/>
@@ -34,7 +34,7 @@
         <dmn:parameter id="_383575BC-A643-47DC-BC07-CC054A41883F" name="parameters"/>
         <dmn:context id="_9A5911FF-C52A-434F-9155-0A265CCF70B9">
           <dmn:contextEntry>
-            <dmn:variable id="_7C4E8DA4-7D77-4640-A13E-9663F6FB446C" name="Customer" typeRef="cc1.tPerson"/>
+            <dmn:variable id="_7C4E8DA4-7D77-4640-A13E-9663F6FB446C" name="Customer" typeRef="cc.tPerson"/>
             <dmn:literalExpression id="_F752E397-F7B1-43A0-B2B4-E72032B47853">
               <dmn:text>Customer</dmn:text>
             </dmn:literalExpression>
@@ -45,7 +45,7 @@
   </dmn:decision>
   <dmn:inputData id="_CFD35026-32F8-4499-86C6-1EAD3292977A" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_9E1AD905-84FE-4274-A746-5BD7C9C5D001" name="Customer" typeRef="cc1.tPerson"/>
+    <dmn:variable id="_9E1AD905-84FE-4274-A746-5BD7C9C5D001" name="Customer" typeRef="cc.tPerson"/>
   </dmn:inputData>
   <dmn:decision id="_86A5EA10-2F31-4264-98B6-2D963AD9880D" name="Communication Channel">
     <dmn:extensionElements/>
