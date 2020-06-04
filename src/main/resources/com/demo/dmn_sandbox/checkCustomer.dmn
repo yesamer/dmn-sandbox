@@ -12,15 +12,44 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:decision id="_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" name="Decision-1">
+  <dmn:decision id="_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" name="Greeting">
     <dmn:extensionElements/>
-    <dmn:variable id="_E95CD366-FA8E-4ED9-8EBA-8D1294C6FE5A" name="Decision-1"/>
+    <dmn:variable id="_E95CD366-FA8E-4ED9-8EBA-8D1294C6FE5A" name="Greeting"/>
     <dmn:informationRequirement id="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
       <dmn:requiredInput href="#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression id="_E9B89FBE-E91E-47A8-A8A6-FBD543EDB77D">
-      <dmn:text>"yo"</dmn:text>
-    </dmn:literalExpression>
+    <dmn:decisionTable id="_CF67E94F-8517-4F5E-BE7C-37FF8EC15838" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_5BF7C8A1-5D65-4033-9704-8DCF3CA8BEBE">
+        <dmn:inputExpression id="_ABBC0C88-C9E7-456F-8E7C-32DCD5B12389" typeRef="string">
+          <dmn:text>Customer.Gender</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_DBC1E7DA-B6C4-4A02-9A67-957C088D5368"/>
+      <dmn:rule id="_4606714D-32A6-4C6B-B2F8-FFD2D378A2C3">
+        <dmn:inputEntry id="_361EF092-D702-4783-83BA-2F2E1F6F801F">
+          <dmn:text>"Male"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_87E43E6B-D252-415B-A874-47D22E384AB3">
+          <dmn:text>"Hi Mr"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B71BBA49-D516-48AF-80B6-DC013AD7945A">
+        <dmn:inputEntry id="_F110FFED-3EF4-438A-BEDF-A35B8C0F52F7">
+          <dmn:text>"Female"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C3F6D8FA-021E-4947-B717-C5FAA005D157">
+          <dmn:text>"Hi Miss"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_36780AE5-64A4-47B1-B7F6-BE4F309FF357">
+        <dmn:inputEntry id="_DD851EFD-A68B-4764-8D97-D35ED86B872E">
+          <dmn:text>"Other"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3FD5EE87-E926-4AFB-8C3F-102A0CF39360">
+          <dmn:text>"Hi"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:decision id="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" name="Eligibility">
     <dmn:extensionElements/>
@@ -93,8 +122,11 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_E9B89FBE-E91E-47A8-A8A6-FBD543EDB77D">
-            <kie:width>300.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_CF67E94F-8517-4F5E-BE7C-37FF8EC15838">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_53C1B590-CD3E-4268-9CB5-48C4FB848659">
             <kie:width>50.0</kie:width>
@@ -111,7 +143,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="714" y="230" width="100" height="50"/>
+        <dc:Bounds x="672" y="180" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
@@ -129,7 +161,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="382" y="332" width="100" height="50"/>
+        <dc:Bounds x="552.2990654205607" y="336" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" dmnElementRef="_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" isCollapsed="false">
@@ -146,11 +178,11 @@
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_43A8AFD8-7D23-42DC-B51C-E1DE15440072" dmnElementRef="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
-        <di:waypoint x="432" y="357"/>
-        <di:waypoint x="764" y="255"/>
+        <di:waypoint x="602.2990654205607" y="361"/>
+        <di:waypoint x="722" y="205"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_AB114E90-C7FA-4FAA-873A-A77F61BBCA78" dmnElementRef="_AB114E90-C7FA-4FAA-873A-A77F61BBCA78">
-        <di:waypoint x="432" y="357"/>
+        <di:waypoint x="602.2990654205607" y="361"/>
         <di:waypoint x="432" y="205"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
