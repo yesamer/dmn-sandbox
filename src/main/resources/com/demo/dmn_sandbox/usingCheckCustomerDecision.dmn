@@ -14,7 +14,7 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_5462571B-F73B-4771-9322-DFF57032B283" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_06C5E10F-C77D-4350-B51E-B77957DB74CA">
-        <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96" typeRef="included2.string">
+        <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96">
           <dmn:text>yo</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -63,7 +63,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="434" y="293" width="100" height="50"/>
+        <dc:Bounds x="409" y="289" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" dmnElementRef="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" isCollapsed="false">
@@ -76,7 +76,7 @@
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_358614A8-70E5-4F5B-BD95-C12FAEDE2338" dmnElementRef="_358614A8-70E5-4F5B-BD95-C12FAEDE2338">
-        <di:waypoint x="484" y="318"/>
+        <di:waypoint x="459" y="314"/>
         <di:waypoint x="460" y="157"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
