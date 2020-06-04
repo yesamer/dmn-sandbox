@@ -5,11 +5,45 @@
   <dmn:decision id="_DB38EDE1-A9BC-4504-BF16-E3A476AB5E81" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_C5037A1D-BFF3-4341-A13D-7077FE25C647" name="Communication Channel" typeRef="string"/>
+    <dmn:informationRequirement id="_86D74365-F752-4BD9-B487-BD7DEA764FEB">
+      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_561888EB-6FEA-4632-8714-E3C0B96433CB" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_839BD078-11A2-446E-BAA2-8D690A14AF93">
+        <dmn:inputExpression id="_5A42A450-7BAA-4BE3-AC1C-43E80E4BAA71">
+          <dmn:text>cc.Eligibility</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_4C0BE040-6A64-4945-9DC2-E81B399A7493" typeRef="string"/>
+      <dmn:rule id="_515EEEC2-E83D-47CC-8D8F-260D15E12454">
+        <dmn:inputEntry id="_57E59191-B7D9-4DDA-8216-DAC2A19966C2">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_112497B5-E843-42BF-B4DB-F74015C7F84D">
+          <dmn:text>"Phone Call"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9C305CC9-283F-4E86-8E51-F280A5FE2B81">
+        <dmn:inputEntry id="_AC44D361-747A-47FA-8252-A6BEC9AFA6D2">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_52DEDDEB-6FCD-4FB9-A687-91CEA15C710C">
+          <dmn:text>"Email"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_561888EB-6FEA-4632-8714-E3C0B96433CB">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>213.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_DB38EDE1-A9BC-4504-BF16-E3A476AB5E81" dmnElementRef="_DB38EDE1-A9BC-4504-BF16-E3A476AB5E81" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -20,6 +54,19 @@
         <dc:Bounds x="350" y="161" width="180" height="62"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="390" y="314" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_86D74365-F752-4BD9-B487-BD7DEA764FEB" dmnElementRef="_86D74365-F752-4BD9-B487-BD7DEA764FEB">
+        <di:waypoint x="440" y="339"/>
+        <di:waypoint x="440" y="192"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
