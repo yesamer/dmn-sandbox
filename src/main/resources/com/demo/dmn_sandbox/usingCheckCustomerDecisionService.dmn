@@ -16,7 +16,7 @@
         <dmn:variable id="_6064DC5A-9BD4-44F6-BC62-291A5601A51D" name="Eligibility" typeRef="boolean"/>
         <dmn:invocation id="_E6A0652E-3F84-41C7-9785-DF5DEB98C592">
           <dmn:literalExpression id="_827B302A-A7DC-4EBD-A3F5-B78EB8D6D7CE">
-            <dmn:text>cc.EligibilitDecisionService</dmn:text>
+            <dmn:text>cc.EligibilityDecisionService</dmn:text>
           </dmn:literalExpression>
           <dmn:binding>
             <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="Customer" typeRef="cc.tPerson"/>
