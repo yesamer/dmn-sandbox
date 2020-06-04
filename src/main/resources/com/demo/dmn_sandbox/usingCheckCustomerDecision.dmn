@@ -2,17 +2,40 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_60CDBBF6-AC8C-4FBF-ABF4-89ECEB810441" name="usingCheckCustomerDecision" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289">
   <dmn:extensionElements/>
   <dmn:import id="_7AF23D57-C6AB-4205-B22A-FC927A9BA7F5" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
-  <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="Decision-1">
+  <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="French Greeting">
     <dmn:extensionElements/>
-    <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="Decision-1" typeRef="string"/>
+    <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="French Greeting" typeRef="string"/>
     <dmn:informationRequirement id="_960F4850-D869-4DF1-AAF5-75E2B10A2D4E">
       <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_5462571B-F73B-4771-9322-DFF57032B283" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_06C5E10F-C77D-4350-B51E-B77957DB74CA">
+        <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96" typeRef="included2.string">
+          <dmn:text>cc.Greeting</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_B777C232-3D19-4FF6-942F-B1C5D606431B" typeRef="string"/>
+      <dmn:rule id="_0F63B7C8-C3E7-494F-9B11-629538DAC44A">
+        <dmn:inputEntry id="_80C5B541-ACFD-4DB2-A370-1CE355F786A4">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E8C5538A-C8DD-4BAF-B959-B62C4773C43D">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_5462571B-F73B-4771-9322-DFF57032B283">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" dmnElementRef="included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" isCollapsed="false">
         <dmndi:DMNStyle>
