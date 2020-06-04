@@ -4,16 +4,40 @@
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="Decision-1">
     <dmn:extensionElements/>
     <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="Decision-1" typeRef="string"/>
-    <dmn:literalExpression id="_26ECAF5B-9DD7-406A-8D8A-248CD187DD32">
-      <dmn:text>"ddss"</dmn:text>
-    </dmn:literalExpression>
+    <dmn:decisionTable id="_D9414916-5DFF-47F3-9335-E26F7C5B658B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_6648F9FC-DAC1-4614-8B9F-7CC471CA1839">
+        <dmn:inputExpression id="_A692637D-AAF0-4F64-82AB-A4AA5C6C7FC4">
+          <dmn:text>input-1</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_1002067B-0F9B-4748-B530-56DF49DEFCDF" typeRef="string"/>
+      <dmn:rule id="_52FE5613-336E-4937-8320-29697887DF39">
+        <dmn:inputEntry id="_AE20FF58-D5F7-4127-AAB3-F8655FCC2E14">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C76F3C48-0CC9-413C-9AE8-A13D636A7832">
+          <dmn:text>"Phone Call"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9D581B83-4EA7-4A03-A91F-12036E9C0EE3">
+        <dmn:inputEntry id="_A66FB872-22A0-4B95-AB29-E29A8F176BFF">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A4704A0B-8918-482C-9BB4-C0E93F8F3ADC">
+          <dmn:text>"Email"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_26ECAF5B-9DD7-406A-8D8A-248CD187DD32">
-            <kie:width>300.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_D9414916-5DFF-47F3-9335-E26F7C5B658B">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>214.0</kie:width>
+            <kie:width>281.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
