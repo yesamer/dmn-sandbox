@@ -203,7 +203,7 @@
     </scesimData>
   </background>
   <settings>
-    <dmnFilePath>src/main/resources/com/demo/dmn_sandbox/usingCheckCustomer.dmn</dmnFilePath>
+    <dmnFilePath>src/main/resources/com/demo/dmn_sandbox/usingCheckCustomerInput.dmn</dmnFilePath>
     <type>DMN</type>
     <dmnNamespace>https://kiegroup.org/dmn/_4A62C182-59BF-4F62-9188-9C8D8DF0DD0D</dmnNamespace>
     <dmnName>usingCheckCustomer</dmnName>
