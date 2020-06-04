@@ -5,12 +5,24 @@
   <dmn:decision id="_818599CC-B2B1-4F23-9850-01B7EE52EFCA" name="Communication Channel">
     <dmn:extensionElements/>
     <dmn:variable id="_0EC24922-1F7D-4999-A7EB-B7E53BFA307B" name="Communication Channel" typeRef="string"/>
+    <dmn:informationRequirement id="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
+      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
+    </dmn:informationRequirement>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension/>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="438" y="356" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_818599CC-B2B1-4F23-9850-01B7EE52EFCA" dmnElementRef="_818599CC-B2B1-4F23-9850-01B7EE52EFCA" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -20,6 +32,10 @@
         <dc:Bounds x="429" y="223" width="118" height="52"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13" dmnElementRef="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
+        <di:waypoint x="488" y="381"/>
+        <di:waypoint x="488" y="249"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
