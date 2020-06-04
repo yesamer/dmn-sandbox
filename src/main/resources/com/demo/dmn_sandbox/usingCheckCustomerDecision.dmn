@@ -1,72 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_C5C83BF5-915B-4EF4-8FC4-D9C428CD1A0A" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_A5D7055E-28D0-45D4-97FC-9B650C11D6EB" name="usingCheckCustomerDecision" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_C5C83BF5-915B-4EF4-8FC4-D9C428CD1A0A">
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_60CDBBF6-AC8C-4FBF-ABF4-89ECEB810441" name="usingCheckCustomerDecision" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289">
   <dmn:extensionElements/>
-  <dmn:import id="_1802EBE8-3F82-4B67-A0D5-D3B6C16C856F" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
-  <dmn:decision id="_818599CC-B2B1-4F23-9850-01B7EE52EFCA" name="Communication Channel">
-    <dmn:extensionElements/>
-    <dmn:variable id="_0EC24922-1F7D-4999-A7EB-B7E53BFA307B" name="Communication Channel" typeRef="string"/>
-    <dmn:informationRequirement id="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
-      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_A97E7AD5-9FD2-4764-B8E6-0DD053A37CC5" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_699754BD-786A-4A4D-B4BD-C19E02B95029">
-        <dmn:inputExpression id="_07B4C541-B18E-4D34-ACC1-8DA1128BF5BA">
-          <dmn:text>cc.Eligibility</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_E1256021-29C4-491C-AFB5-B5ABD7EC3810" typeRef="string"/>
-      <dmn:rule id="_6AB91670-3246-40C3-ABC8-FDA3E84BFAF4">
-        <dmn:inputEntry id="_68FF6C77-FE09-445A-B65C-6D30DD1013EC">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_5299D956-725F-4161-8B74-B43480DF53A4">
-          <dmn:text>"Email"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_05A9AE46-1FE5-4B87-AE07-511CE42C77D1">
-        <dmn:inputEntry id="_DA8A7D91-9E50-4A14-A567-1B0FE6CE61A9">
-          <dmn:text>false</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_196C1806-90C9-40ED-80C6-BE0F85F54380">
-          <dmn:text>"Phone Call"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_A97E7AD5-9FD2-4764-B8E6-0DD053A37CC5">
-            <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>268.0</kie:width>
-            <kie:width>100.0</kie:width>
-          </kie:ComponentWidths>
-        </kie:ComponentsWidthsExtension>
+        <kie:ComponentsWidthsExtension/>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="438" y="373" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_818599CC-B2B1-4F23-9850-01B7EE52EFCA" dmnElementRef="_818599CC-B2B1-4F23-9850-01B7EE52EFCA" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="429" y="223" width="118" height="52"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13" dmnElementRef="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
-        <di:waypoint x="488" y="398"/>
-        <di:waypoint x="488" y="249"/>
-      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
