@@ -3,7 +3,7 @@
   <dmn:extensionElements/>
   <dmn:inputData id="_80EA3F06-6955-4BC3-B29D-C2D944458885" name="input-1">
     <dmn:extensionElements/>
-    <dmn:variable id="_8385775E-8FBC-4FE9-9F18-49E084845581" name="input-1"/>
+    <dmn:variable id="_8385775E-8FBC-4FE9-9F18-49E084845581" name="input-1" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="Decision-1">
     <dmn:extensionElements/>
@@ -13,7 +13,7 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_D9414916-5DFF-47F3-9335-E26F7C5B658B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_6648F9FC-DAC1-4614-8B9F-7CC471CA1839">
-        <dmn:inputExpression id="_A692637D-AAF0-4F64-82AB-A4AA5C6C7FC4">
+        <dmn:inputExpression id="_A692637D-AAF0-4F64-82AB-A4AA5C6C7FC4" typeRef="boolean">
           <dmn:text>input-1</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
