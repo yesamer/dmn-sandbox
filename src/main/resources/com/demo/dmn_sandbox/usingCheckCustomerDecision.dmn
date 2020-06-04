@@ -4,7 +4,7 @@
   <dmn:import id="_8EE98E93-41F5-4EE2-AAE6-59700B567C09" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="Decision-1">
     <dmn:extensionElements/>
-    <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="Decision-1" typeRef="included2.string"/>
+    <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="Decision-1"/>
     <dmn:literalExpression id="_26ECAF5B-9DD7-406A-8D8A-248CD187DD32">
       <dmn:text>"ddss"</dmn:text>
     </dmn:literalExpression>
