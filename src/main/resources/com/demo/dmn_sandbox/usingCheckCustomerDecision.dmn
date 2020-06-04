@@ -8,7 +8,7 @@
     <dmn:decisionTable id="_5462571B-F73B-4771-9322-DFF57032B283" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_06C5E10F-C77D-4350-B51E-B77957DB74CA">
         <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96" typeRef="included2.string">
-          <dmn:text>cc.Greeting</dmn:text>
+          <dmn:text>yo</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_B777C232-3D19-4FF6-942F-B1C5D606431B" typeRef="string"/>
