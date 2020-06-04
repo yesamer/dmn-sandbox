@@ -235,7 +235,7 @@
     </scesimData>
   </background>
   <settings>
-    <dmnFilePath>src/main/resources/com/demo/dmn_sandbox/invokeCheckCustomer.dmn</dmnFilePath>
+    <dmnFilePath>src/main/resources/com/demo/dmn_sandbox/invokeCheckCustomerDecisionService.dmn</dmnFilePath>
     <type>DMN</type>
     <dmnNamespace>https://kiegroup.org/dmn/_DCF546B5-A74B-4071-A22B-6A0C860DC7AE</dmnNamespace>
     <dmnName>invokeCheckCustomer</dmnName>
