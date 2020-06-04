@@ -168,7 +168,7 @@
               <name>1|4</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Bonjour&quot;</rawValue>
+            <rawValue class="string">&quot;Bonjour Monsieur&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -179,7 +179,7 @@
               <name>1|5</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Hi&quot;</rawValue>
+            <rawValue class="string">&quot;Hi Mr.&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
