@@ -19,7 +19,7 @@
             <dmn:text>cc.EligibilityDecisionService</dmn:text>
           </dmn:literalExpression>
           <dmn:binding>
-            <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="Customer" typeRef="cc.tPerson"/>
+            <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="cc.Customer" typeRef="cc.tPerson"/>
             <dmn:literalExpression id="_A4DB535B-E384-4D02-B257-90008506BA25">
               <dmn:text>Customer</dmn:text>
             </dmn:literalExpression>
