@@ -12,10 +12,13 @@
     <dmn:informationRequirement id="_358614A8-70E5-4F5B-BD95-C12FAEDE2338">
       <dmn:requiredInput href="#_8D89ABC9-E260-4D59-99AE-B672F73A0C46"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_0D5D3C64-F92A-49D3-BB49-1704E12F6D72">
+      <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_5462571B-F73B-4771-9322-DFF57032B283" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_06C5E10F-C77D-4350-B51E-B77957DB74CA">
         <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96">
-          <dmn:text>yo</dmn:text>
+          <dmn:text>cc.Greeting</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_B777C232-3D19-4FF6-942F-B1C5D606431B" typeRef="string"/>
@@ -63,7 +66,16 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="409" y="289" width="100" height="50"/>
+        <dc:Bounds x="232.59813084112147" y="289" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" dmnElementRef="included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="474" y="298" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" dmnElementRef="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" isCollapsed="false">
@@ -76,7 +88,11 @@
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_358614A8-70E5-4F5B-BD95-C12FAEDE2338" dmnElementRef="_358614A8-70E5-4F5B-BD95-C12FAEDE2338">
-        <di:waypoint x="459" y="314"/>
+        <di:waypoint x="282.5981308411215" y="314"/>
+        <di:waypoint x="460" y="157"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_0D5D3C64-F92A-49D3-BB49-1704E12F6D72" dmnElementRef="_0D5D3C64-F92A-49D3-BB49-1704E12F6D72">
+        <di:waypoint x="524" y="323"/>
         <di:waypoint x="460" y="157"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
