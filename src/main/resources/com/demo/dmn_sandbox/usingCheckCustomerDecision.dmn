@@ -5,6 +5,9 @@
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="French Greeting">
     <dmn:extensionElements/>
     <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="French Greeting" typeRef="string"/>
+    <dmn:informationRequirement id="_0D5D3C64-F92A-49D3-BB49-1704E12F6D72">
+      <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_5462571B-F73B-4771-9322-DFF57032B283" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_06C5E10F-C77D-4350-B51E-B77957DB74CA">
         <dmn:inputExpression id="_6C90BF78-725B-4FF2-9806-BAEC3BE70B96">
@@ -50,6 +53,15 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" dmnElementRef="included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="410" y="243" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" dmnElementRef="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -59,6 +71,10 @@
         <dc:Bounds x="410" y="132" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_0D5D3C64-F92A-49D3-BB49-1704E12F6D72" dmnElementRef="_0D5D3C64-F92A-49D3-BB49-1704E12F6D72">
+        <di:waypoint x="460" y="268"/>
+        <di:waypoint x="460" y="157"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
