@@ -30,7 +30,7 @@
           <dmn:text>"Male"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_87E43E6B-D252-415B-A874-47D22E384AB3">
-          <dmn:text>"Hi Mr"</dmn:text>
+          <dmn:text>"Hi Mr."</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_B71BBA49-D516-48AF-80B6-DC013AD7945A">
