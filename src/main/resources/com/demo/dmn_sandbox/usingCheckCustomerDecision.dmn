@@ -4,7 +4,7 @@
   <dmn:import id="_9E9ACC0A-3700-4885-A9BB-FB42FE23D3C4" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_6EFEDDFB-6FB5-4D8B-94A3-607874C1889C" name="Communication Channel">
     <dmn:extensionElements/>
-    <dmn:variable id="_D0D2C1B8-B627-419B-930D-B8FDE12DEECE" name="Communication Channel" typeRef="string"/>
+    <dmn:variable id="_D0D2C1B8-B627-419B-930D-B8FDE12DEECE" name="Communication Channel" typeRef="String"/>
     <dmn:informationRequirement id="_2688AAD8-18B9-4595-AB26-6AB1292E1961">
       <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
     </dmn:informationRequirement>
