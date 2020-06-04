@@ -9,21 +9,13 @@
       <dmn:requiredDecision href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_D9414916-5DFF-47F3-9335-E26F7C5B658B" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_6648F9FC-DAC1-4614-8B9F-7CC471CA1839">
-        <dmn:inputExpression id="_A692637D-AAF0-4F64-82AB-A4AA5C6C7FC4" typeRef="boolean">
-          <dmn:text>input-1</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
       <dmn:input id="_AC176901-58B1-421F-94CF-E4542907B51F">
-        <dmn:inputExpression id="_809C2123-530C-4560-8CEC-B2CEE06EBBBE">
-          <dmn:text>cc.Decision-1</dmn:text>
+        <dmn:inputExpression id="_809C2123-530C-4560-8CEC-B2CEE06EBBBE" typeRef="included2.string">
+          <dmn:text>cc.Greeting</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_1002067B-0F9B-4748-B530-56DF49DEFCDF" typeRef="string"/>
       <dmn:rule id="_52FE5613-336E-4937-8320-29697887DF39">
-        <dmn:inputEntry id="_AE20FF58-D5F7-4127-AAB3-F8655FCC2E14">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
         <dmn:inputEntry id="_3F3BCE6D-2035-4DC0-8E44-943DB7DC9276">
           <dmn:text>"yo"</dmn:text>
         </dmn:inputEntry>
@@ -32,9 +24,6 @@
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_9D581B83-4EA7-4A03-A91F-12036E9C0EE3">
-        <dmn:inputEntry id="_A66FB872-22A0-4B95-AB29-E29A8F176BFF">
-          <dmn:text>false</dmn:text>
-        </dmn:inputEntry>
         <dmn:inputEntry id="_D661FE05-C3AA-4A83-8D60-7DB3FC87A17A">
           <dmn:text>"hey"</dmn:text>
         </dmn:inputEntry>
@@ -50,7 +39,6 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_D9414916-5DFF-47F3-9335-E26F7C5B658B">
             <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>214.0</kie:width>
             <kie:width>281.0</kie:width>
