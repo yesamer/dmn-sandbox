@@ -22,35 +22,35 @@
       <dmn:output id="_87AAC3AD-520A-4D81-B062-FC800E2CAC14" typeRef="string"/>
       <dmn:rule id="_5626D545-D124-47C5-B015-0FA7D3BA8FB9">
         <dmn:inputEntry id="_B9BC268C-8730-4CBF-93F1-4063BA2BC52E">
-          <dmn:text> > 18</dmn:text>
+          <dmn:text> &lt; 18</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_D5BA87BF-C0C2-4F7A-BC16-7E49671662CF">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_273E766D-8D29-4C73-8A9F-C4964A8E5749">
-          <dmn:text>"Hey"</dmn:text>
+          <dmn:text>"Email"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_D7563F13-0F2D-4B19-97AC-88F14264D33E">
         <dmn:inputEntry id="_5A865F56-8BB3-4C0C-8006-6E1F053B267E">
-          <dmn:text>&lt;= 18</dmn:text>
+          <dmn:text>[18..70]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_E7644221-6039-490F-B8EF-69ED13116942">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"Male", "Female", "Other"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_7A470793-9486-4367-A550-E8DC640D4438">
-          <dmn:text>"Yo"</dmn:text>
+          <dmn:text>"Phone Call"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_217ED501-B6BD-48C1-969B-ECA4FD94C317">
         <dmn:inputEntry id="_BB25AA2D-C3F1-4E1B-B86D-09675E976C5A">
-          <dmn:text>-</dmn:text>
+          <dmn:text>&gt; 70</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_FC7A3E1A-745E-4E3A-952F-0A73C550A4E8">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_DAF09C6E-FC31-4548-9F1B-97EFA1DB4E9E">
-          <dmn:text></dmn:text>
+          <dmn:text>"Email"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
