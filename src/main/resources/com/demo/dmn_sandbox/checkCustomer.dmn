@@ -12,6 +12,16 @@
       <dmn:typeRef>number</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
+  <dmn:decision id="_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" name="Decision-1">
+    <dmn:extensionElements/>
+    <dmn:variable id="_E95CD366-FA8E-4ED9-8EBA-8D1294C6FE5A" name="Decision-1"/>
+    <dmn:informationRequirement id="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
+      <dmn:requiredInput href="#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="_E9B89FBE-E91E-47A8-A8A6-FBD543EDB77D">
+      <dmn:text>"yo"</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
   <dmn:decision id="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" name="Eligibility">
     <dmn:extensionElements/>
     <dmn:variable id="_ACC4F4ED-964F-4407-9925-4E5997B8C772" name="Eligibility" typeRef="boolean"/>
@@ -83,6 +93,9 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_E9B89FBE-E91E-47A8-A8A6-FBD543EDB77D">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_53C1B590-CD3E-4268-9CB5-48C4FB848659">
             <kie:width>50.0</kie:width>
             <kie:width>144.0</kie:width>
@@ -92,6 +105,15 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" dmnElementRef="_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="714" y="230" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -123,6 +145,10 @@
           <di:waypoint x="561" y="144"/>
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_43A8AFD8-7D23-42DC-B51C-E1DE15440072" dmnElementRef="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
+        <di:waypoint x="432" y="357"/>
+        <di:waypoint x="764" y="255"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_AB114E90-C7FA-4FAA-873A-A77F61BBCA78" dmnElementRef="_AB114E90-C7FA-4FAA-873A-A77F61BBCA78">
         <di:waypoint x="432" y="357"/>
         <di:waypoint x="432" y="205"/>
