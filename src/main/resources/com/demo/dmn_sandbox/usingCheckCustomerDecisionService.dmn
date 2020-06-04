@@ -14,23 +14,22 @@
     <dmn:context id="_A1C9506E-22BA-42F1-937E-426A544AE57E">
       <dmn:contextEntry>
         <dmn:variable id="_6064DC5A-9BD4-44F6-BC62-291A5601A51D" name="Eligibility" typeRef="boolean"/>
-        <dmn:literalExpression>
-          <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
-        </dmn:literalExpression>
+        <dmn:invocation id="_E6A0652E-3F84-41C7-9785-DF5DEB98C592">
+          <dmn:literalExpression id="_827B302A-A7DC-4EBD-A3F5-B78EB8D6D7CE">
+            <dmn:text>cc.EligibilitDecisionService</dmn:text>
+          </dmn:literalExpression>
+          <dmn:binding>
+            <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="Customer" typeRef="cc.tPerson"/>
+            <dmn:literalExpression id="_A4DB535B-E384-4D02-B257-90008506BA25">
+              <dmn:text>Customer</dmn:text>
+            </dmn:literalExpression>
+          </dmn:binding>
+        </dmn:invocation>
       </dmn:contextEntry>
       <dmn:contextEntry>
-        <dmn:decisionTable id="_06FFCE4F-F8BD-4409-8AA7-651B655EE70E" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-          <dmn:input id="_0831053F-833C-4BB5-B600-71AB4577F054">
-            <dmn:inputExpression id="_FB5FE45C-1832-4E07-9034-E7AD1156B183">
-              <dmn:text>input-1</dmn:text>
-            </dmn:inputExpression>
-          </dmn:input>
-          <dmn:rule id="_9E029CBC-5D45-49B4-8B17-C54380F43F58">
-            <dmn:inputEntry id="_B8F0893B-C7C0-43B2-8E0E-9A2E8AC96196">
-              <dmn:text>-</dmn:text>
-            </dmn:inputEntry>
-          </dmn:rule>
-        </dmn:decisionTable>
+        <dmn:literalExpression id="_F8197110-3EF9-44C7-8F7F-52EE70BF9B03">
+          <dmn:text>"blaa"</dmn:text>
+        </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
@@ -47,7 +46,16 @@
             <kie:width>100.0</kie:width>
             <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_06FFCE4F-F8BD-4409-8AA7-651B655EE70E">
+          <kie:ComponentWidths dmnElementRef="_E6A0652E-3F84-41C7-9785-DF5DEB98C592">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_827B302A-A7DC-4EBD-A3F5-B78EB8D6D7CE"/>
+          <kie:ComponentWidths dmnElementRef="_A4DB535B-E384-4D02-B257-90008506BA25">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_F8197110-3EF9-44C7-8F7F-52EE70BF9B03">
             <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
@@ -83,12 +91,12 @@
         <dc:Bounds x="287" y="304" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_033F5A45-3945-49D7-ACF1-285C880BD077" dmnElementRef="_033F5A45-3945-49D7-ACF1-285C880BD077">
-        <di:waypoint x="575" y="213"/>
-        <di:waypoint x="338" y="176"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_1466A949-0852-42A9-996E-BF1A034A2452" dmnElementRef="_1466A949-0852-42A9-996E-BF1A034A2452">
         <di:waypoint x="337" y="329"/>
+        <di:waypoint x="338" y="176"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_033F5A45-3945-49D7-ACF1-285C880BD077" dmnElementRef="_033F5A45-3945-49D7-ACF1-285C880BD077">
+        <di:waypoint x="575" y="213"/>
         <di:waypoint x="338" y="176"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
