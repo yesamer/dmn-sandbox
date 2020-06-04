@@ -5,9 +5,6 @@
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="Decision-1">
     <dmn:extensionElements/>
     <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="Decision-1" typeRef="included2.string"/>
-    <dmn:informationRequirement id="_7F9493B0-85D5-4E13-BBCC-06A7A66DCF1B">
-      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
-    </dmn:informationRequirement>
     <dmn:literalExpression id="_26ECAF5B-9DD7-406A-8D8A-248CD187DD32">
       <dmn:text>"ddss"</dmn:text>
     </dmn:literalExpression>
@@ -30,19 +27,6 @@
         <dc:Bounds x="410" y="132" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="410" y="284" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_7F9493B0-85D5-4E13-BBCC-06A7A66DCF1B" dmnElementRef="_7F9493B0-85D5-4E13-BBCC-06A7A66DCF1B">
-        <di:waypoint x="460" y="309"/>
-        <di:waypoint x="460" y="157"/>
-      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
