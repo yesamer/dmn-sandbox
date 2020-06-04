@@ -10,7 +10,7 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_A97E7AD5-9FD2-4764-B8E6-0DD053A37CC5" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_699754BD-786A-4A4D-B4BD-C19E02B95029">
-        <dmn:inputExpression id="_07B4C541-B18E-4D34-ACC1-8DA1128BF5BA" typeRef="included2.boolean">
+        <dmn:inputExpression id="_07B4C541-B18E-4D34-ACC1-8DA1128BF5BA">
           <dmn:text>cc.Eligibility</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -51,7 +51,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="438" y="356" width="100" height="50"/>
+        <dc:Bounds x="438" y="373" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_818599CC-B2B1-4F23-9850-01B7EE52EFCA" dmnElementRef="_818599CC-B2B1-4F23-9850-01B7EE52EFCA" isCollapsed="false">
@@ -64,7 +64,7 @@
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13" dmnElementRef="_1D9AAE62-AAC8-48D3-8F7F-75BAF95ADB13">
-        <di:waypoint x="488" y="381"/>
+        <di:waypoint x="488" y="398"/>
         <di:waypoint x="488" y="249"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
