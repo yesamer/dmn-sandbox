@@ -11,12 +11,12 @@
     <dmn:decisionTable id="_DEE1CBC7-184B-4F40-894C-16A7E43B32E8" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_2495647F-9A69-4F9C-8480-9363DD61466C">
         <dmn:inputExpression id="_440ABE81-1D3F-4E37-9786-45EFE28881F8" typeRef="number">
-          <dmn:text>(cc.Customer).cc.Age</dmn:text>
+          <dmn:text>(cc.Customer).Age</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_6C50D4CF-B5C3-47A0-B778-1100786A193A">
         <dmn:inputExpression id="_170ADF09-3088-45F1-9A27-53FDBDCFA6B4" typeRef="string">
-          <dmn:text>(cc.Customer).cc.Gender</dmn:text>
+          <dmn:text>(cc.Customer).Gender</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_87AAC3AD-520A-4D81-B062-FC800E2CAC14" typeRef="string"/>
@@ -63,7 +63,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="306" y="363" width="100" height="50"/>
+        <dc:Bounds x="310" y="200" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_65959694-0F92-4DD1-9E04-20F4ED1A7C81" dmnElementRef="_65959694-0F92-4DD1-9E04-20F4ED1A7C81" isCollapsed="false">
@@ -72,12 +72,12 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="260" y="231" width="193" height="50"/>
+        <dc:Bounds x="264" y="68" width="193" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_9CDD8E9C-BD9F-4889-8B77-1EBAD239EB20" dmnElementRef="_9CDD8E9C-BD9F-4889-8B77-1EBAD239EB20">
-        <di:waypoint x="356" y="388"/>
-        <di:waypoint x="356.5" y="256"/>
+        <di:waypoint x="360" y="225"/>
+        <di:waypoint x="360.5" y="93"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
