@@ -17,10 +17,26 @@
       <dmn:output id="_B777C232-3D19-4FF6-942F-B1C5D606431B" typeRef="string"/>
       <dmn:rule id="_0F63B7C8-C3E7-494F-9B11-629538DAC44A">
         <dmn:inputEntry id="_80C5B541-ACFD-4DB2-A370-1CE355F786A4">
-          <dmn:text>-</dmn:text>
+          <dmn:text>"Hi Mr."</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E8C5538A-C8DD-4BAF-B959-B62C4773C43D">
-          <dmn:text></dmn:text>
+          <dmn:text>"Bonjour Monsieur"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_56811B32-F635-4723-A6CF-670DF8BCA28A">
+        <dmn:inputEntry id="_804A1071-A62E-48B7-AC55-85E37AE33790">
+          <dmn:text>"Hi Miss"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_CD56A27A-D627-43D1-877D-A3A35F6F81F8">
+          <dmn:text>"Bonjour Madame"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_6D15EFD2-CBDE-43A4-A4DB-C854096591C4">
+        <dmn:inputEntry id="_81228D2E-B089-450E-B0B2-9BB17D56F314">
+          <dmn:text>"Hi"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_2643452B-1B7D-4F34-8F35-86F14230B0E6">
+          <dmn:text>"Bonjour"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
@@ -32,7 +48,7 @@
           <kie:ComponentWidths dmnElementRef="_5462571B-F73B-4771-9322-DFF57032B283">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>100.0</kie:width>
+            <kie:width>241.0</kie:width>
             <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
