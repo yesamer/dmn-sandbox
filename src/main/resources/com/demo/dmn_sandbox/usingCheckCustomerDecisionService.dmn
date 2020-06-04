@@ -14,17 +14,23 @@
     <dmn:context id="_A1C9506E-22BA-42F1-937E-426A544AE57E">
       <dmn:contextEntry>
         <dmn:variable id="_6064DC5A-9BD4-44F6-BC62-291A5601A51D" name="Eligibility" typeRef="boolean"/>
-        <dmn:invocation id="_DD212FEC-84D7-4DE0-A0E9-A81FDE08A2C6">
-          <dmn:literalExpression id="_02BF22AA-DE8E-4F58-A76A-0E9721B0A6A0">
-            <dmn:text>cc.EligibilityDecisionService</dmn:text>
-          </dmn:literalExpression>
-          <dmn:binding>
-            <dmn:parameter id="_B833E4BC-4D33-46B9-9DB6-50BC5BC2F621" name="Customer" typeRef="cc.tPerson"/>
-            <dmn:literalExpression id="_CA5444DA-1D28-4CEA-A758-2CDFAC012C03">
-              <dmn:text>Customer</dmn:text>
-            </dmn:literalExpression>
-          </dmn:binding>
-        </dmn:invocation>
+        <dmn:literalExpression id="_81BCB425-C00D-4DF8-910E-7BA1627C1DD9">
+          <dmn:text>cc.EligibilitDecisionService(Customer)</dmn:text>
+        </dmn:literalExpression>
+      </dmn:contextEntry>
+      <dmn:contextEntry>
+        <dmn:decisionTable id="_06FFCE4F-F8BD-4409-8AA7-651B655EE70E" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+          <dmn:input id="_0831053F-833C-4BB5-B600-71AB4577F054">
+            <dmn:inputExpression id="_FB5FE45C-1832-4E07-9034-E7AD1156B183">
+              <dmn:text>input-1</dmn:text>
+            </dmn:inputExpression>
+          </dmn:input>
+          <dmn:rule id="_9E029CBC-5D45-49B4-8B17-C54380F43F58">
+            <dmn:inputEntry id="_B8F0893B-C7C0-43B2-8E0E-9A2E8AC96196">
+              <dmn:text>-</dmn:text>
+            </dmn:inputEntry>
+          </dmn:rule>
+        </dmn:decisionTable>
       </dmn:contextEntry>
     </dmn:context>
   </dmn:decision>
@@ -41,14 +47,11 @@
             <kie:width>100.0</kie:width>
             <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_DD212FEC-84D7-4DE0-A0E9-A81FDE08A2C6">
-            <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>300.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_81BCB425-C00D-4DF8-910E-7BA1627C1DD9">
+            <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_02BF22AA-DE8E-4F58-A76A-0E9721B0A6A0"/>
-          <kie:ComponentWidths dmnElementRef="_CA5444DA-1D28-4CEA-A758-2CDFAC012C03">
-            <kie:width>300.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_06FFCE4F-F8BD-4409-8AA7-651B655EE70E">
+            <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -67,11 +70,11 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="473" y="151" width="208" height="100"/>
+        <dc:Bounds x="471" y="163" width="208" height="100"/>
         <dmndi:DMNLabel/>
         <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="473" y="201"/>
-          <di:waypoint x="681" y="201"/>
+          <di:waypoint x="471" y="213"/>
+          <di:waypoint x="679" y="213"/>
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" dmnElementRef="_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" isCollapsed="false">
@@ -80,15 +83,15 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="277" y="304" width="100" height="50"/>
+        <dc:Bounds x="287" y="304" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_033F5A45-3945-49D7-ACF1-285C880BD077" dmnElementRef="_033F5A45-3945-49D7-ACF1-285C880BD077">
-        <di:waypoint x="577" y="201"/>
+        <di:waypoint x="575" y="213"/>
         <di:waypoint x="338" y="176"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_1466A949-0852-42A9-996E-BF1A034A2452" dmnElementRef="_1466A949-0852-42A9-996E-BF1A034A2452">
-        <di:waypoint x="327" y="329"/>
+        <di:waypoint x="337" y="329"/>
         <di:waypoint x="338" y="176"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
