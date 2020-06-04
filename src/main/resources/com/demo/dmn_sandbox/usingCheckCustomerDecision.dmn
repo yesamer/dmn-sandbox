@@ -2,40 +2,6 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289" xmlns:included1="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_60CDBBF6-AC8C-4FBF-ABF4-89ECEB810441" name="usingCheckCustomerDecision" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_13B3D710-CC40-48BC-8E2E-0E63A66E3289">
   <dmn:extensionElements/>
   <dmn:import id="_7AF23D57-C6AB-4205-B22A-FC927A9BA7F5" name="cc" namespace="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5" locationURI="checkCustomer.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
-  <dmn:decision id="_0A51C68C-EDEA-4C33-B77D-D5CE4ECD2C68" name="Communication Channel">
-    <dmn:extensionElements/>
-    <dmn:variable id="_B68AFC3E-B09D-451C-A58A-435262DCFD19" name="Communication Channel" typeRef="included2.string"/>
-    <dmn:informationRequirement id="_D3D8F0BA-F6F1-4131-91A0-884A377AC319">
-      <dmn:requiredDecision href="#_B00B63E4-B220-4C86-A8CE-DA68689F1AE0"/>
-    </dmn:informationRequirement>
-    <dmn:informationRequirement id="_06913138-E0F2-46A9-AD69-437D81134C83">
-      <dmn:requiredDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_AE9AD2CF-3AD1-46DA-8260-199F6072DEE6" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_B61FADDF-0658-4041-911D-3F15EC6683C9">
-        <dmn:inputExpression id="_5FEF5401-F855-4086-A9B3-6E81D6021AE3">
-          <dmn:text>cc.Eligibility</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_06789C16-C702-4545-ADDC-4E0E7F5285D4" typeRef="included2.string"/>
-      <dmn:rule id="_E1BCFCD5-A4C7-4FB1-A6BE-40F576309A7B">
-        <dmn:inputEntry id="_6F06A644-5BF2-48B3-8991-101C88C03E0E">
-          <dmn:text>false</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_FAE42BE2-99EF-4971-B5F1-92D296ED8078">
-          <dmn:text>"Email"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_D14F7DE9-0264-4359-A79E-A7BD5910585D">
-        <dmn:inputEntry id="_CEC2B208-736C-49EE-B34D-1F9BDF7EB782">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_F5E99847-EDB5-43BE-B77B-C8256292B50F">
-          <dmn:text>"Phone Call"</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
   <dmn:decision id="_B00B63E4-B220-4C86-A8CE-DA68689F1AE0" name="French Greeting">
     <dmn:extensionElements/>
     <dmn:variable id="_1B929668-4E5A-43A5-BA6A-08D11E5A8C7B" name="French Greeting" typeRef="string"/>
@@ -79,12 +45,6 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_AE9AD2CF-3AD1-46DA-8260-199F6072DEE6">
-            <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>268.0</kie:width>
-            <kie:width>100.0</kie:width>
-          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5462571B-F73B-4771-9322-DFF57032B283">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
@@ -93,24 +53,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_0A51C68C-EDEA-4C33-B77D-D5CE4ECD2C68" dmnElementRef="_0A51C68C-EDEA-4C33-B77D-D5CE4ECD2C68" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="209" y="137" width="111" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" dmnElementRef="included2:_9E77BE49-0C3F-4FBF-B286-2705DF8030A4" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="215" y="268" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" dmnElementRef="included1:_AD5DAEC4-5B5B-4064-BDE1-FAEC2E22DA24" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -129,14 +71,6 @@
         <dc:Bounds x="452" y="248" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_D3D8F0BA-F6F1-4131-91A0-884A377AC319" dmnElementRef="_D3D8F0BA-F6F1-4131-91A0-884A377AC319">
-        <di:waypoint x="502" y="273"/>
-        <di:waypoint x="264.5" y="162"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_06913138-E0F2-46A9-AD69-437D81134C83" dmnElementRef="_06913138-E0F2-46A9-AD69-437D81134C83">
-        <di:waypoint x="265" y="293"/>
-        <di:waypoint x="264.5" y="162"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_0D5D3C64-F92A-49D3-BB49-1704E12F6D72" dmnElementRef="_0D5D3C64-F92A-49D3-BB49-1704E12F6D72">
         <di:waypoint x="502" y="384"/>
         <di:waypoint x="502" y="273"/>
