@@ -14,8 +14,8 @@
     <dmn:context id="_A1C9506E-22BA-42F1-937E-426A544AE57E">
       <dmn:contextEntry>
         <dmn:variable id="_6064DC5A-9BD4-44F6-BC62-291A5601A51D" name="Eligibility" typeRef="boolean"/>
-        <dmn:literalExpression id="_81BCB425-C00D-4DF8-910E-7BA1627C1DD9">
-          <dmn:text>cc.EligibilitDecisionService(Customer)</dmn:text>
+        <dmn:literalExpression>
+          <dmn:text>null // auto-filled by the editor to avoid missing empty expression.</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
@@ -45,9 +45,6 @@
           <kie:ComponentWidths dmnElementRef="_A1C9506E-22BA-42F1-937E-426A544AE57E">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>470.0</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_81BCB425-C00D-4DF8-910E-7BA1627C1DD9">
             <kie:width>470.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_06FFCE4F-F8BD-4409-8AA7-651B655EE70E">
