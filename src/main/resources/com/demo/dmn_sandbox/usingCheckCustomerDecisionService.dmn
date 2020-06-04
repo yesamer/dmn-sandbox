@@ -45,19 +45,6 @@
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" dmnElementRef="included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="226" y="281" width="224" height="129"/>
-        <dmndi:DMNLabel/>
-        <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="226" y="331"/>
-          <di:waypoint x="450" y="331"/>
-        </dmndi:DMNDecisionServiceDividerLine>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_E4CD1B9E-6A19-4B91-9328-E6A022A1EACD" dmnElementRef="_E4CD1B9E-6A19-4B91-9328-E6A022A1EACD" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -67,8 +54,21 @@
         <dc:Bounds x="264" y="151" width="148" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" dmnElementRef="included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="473" y="151" width="208" height="100"/>
+        <dmndi:DMNLabel/>
+        <dmndi:DMNDecisionServiceDividerLine>
+          <di:waypoint x="473" y="201"/>
+          <di:waypoint x="681" y="201"/>
+        </dmndi:DMNDecisionServiceDividerLine>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_033F5A45-3945-49D7-ACF1-285C880BD077" dmnElementRef="_033F5A45-3945-49D7-ACF1-285C880BD077">
-        <di:waypoint x="338" y="345.5"/>
+        <di:waypoint x="577" y="201"/>
         <di:waypoint x="338" y="176"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
