@@ -21,9 +21,17 @@
           <dmn:text>input-1</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_94C14EF9-407B-449F-B6C0-3B3268E16A8B">
+        <dmn:inputExpression id="_BDFF455D-D0DF-4A5F-A1C4-A50EA54891D7" typeRef="included2.boolean">
+          <dmn:text>cc.Eligibility</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_1002067B-0F9B-4748-B530-56DF49DEFCDF" typeRef="string"/>
       <dmn:rule id="_52FE5613-336E-4937-8320-29697887DF39">
         <dmn:inputEntry id="_AE20FF58-D5F7-4127-AAB3-F8655FCC2E14">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_1ACAE97D-A2BE-4A04-8741-40F7ADFBF763">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C76F3C48-0CC9-413C-9AE8-A13D636A7832">
@@ -32,6 +40,9 @@
       </dmn:rule>
       <dmn:rule id="_9D581B83-4EA7-4A03-A91F-12036E9C0EE3">
         <dmn:inputEntry id="_A66FB872-22A0-4B95-AB29-E29A8F176BFF">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0F181E63-DDA1-4D95-8E0B-21EF31B5EFBF">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A4704A0B-8918-482C-9BB4-C0E93F8F3ADC">
@@ -46,6 +57,7 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_D9414916-5DFF-47F3-9335-E26F7C5B658B">
             <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>214.0</kie:width>
             <kie:width>281.0</kie:width>
