@@ -115,7 +115,7 @@
   <dmn:decisionService id="_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" name="EligibilityDecisionService">
     <dmn:extensionElements/>
     <dmn:variable id="_AC8CAE01-0FA1-4854-B47D-06CC68DEB1CA" name="EligibilityDecisionService" typeRef="boolean"/>
-    <dmn:encapsulatedDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
+    <dmn:outputDecision href="#_9E77BE49-0C3F-4FBF-B286-2705DF8030A4"/>
     <dmn:inputData href="#_7E527953-CFF3-486F-8917-B75B5FD8B780"/>
   </dmn:decisionService>
   <dmndi:DMNDI>
@@ -152,7 +152,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="382" y="180" width="100" height="50"/>
+        <dc:Bounds x="348" y="135" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_7E527953-CFF3-486F-8917-B75B5FD8B780" dmnElementRef="_7E527953-CFF3-486F-8917-B75B5FD8B780" isCollapsed="false">
@@ -170,11 +170,11 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="304" y="81" width="257" height="199"/>
+        <dc:Bounds x="269" y="72" width="257" height="199"/>
         <dmndi:DMNLabel/>
         <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="304" y="144"/>
-          <di:waypoint x="561" y="144"/>
+          <di:waypoint x="269" y="211"/>
+          <di:waypoint x="526" y="211"/>
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_43A8AFD8-7D23-42DC-B51C-E1DE15440072" dmnElementRef="_43A8AFD8-7D23-42DC-B51C-E1DE15440072">
@@ -183,7 +183,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_AB114E90-C7FA-4FAA-873A-A77F61BBCA78" dmnElementRef="_AB114E90-C7FA-4FAA-873A-A77F61BBCA78">
         <di:waypoint x="602.2990654205607" y="361"/>
-        <di:waypoint x="432" y="205"/>
+        <di:waypoint x="398" y="160"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
