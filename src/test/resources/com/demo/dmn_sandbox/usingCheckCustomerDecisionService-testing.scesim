@@ -145,7 +145,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Male&quot;</rawValue>
+            <rawValue class="string">&quot;Female&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -156,7 +156,7 @@
               <name>1|2</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">14</rawValue>
+            <rawValue class="string">70</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
