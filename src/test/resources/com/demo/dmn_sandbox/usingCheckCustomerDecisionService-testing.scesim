@@ -54,7 +54,7 @@
           <expressionAlias>Gender</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>188.25</columnWidth>
+          <columnWidth>301.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -78,7 +78,7 @@
           <expressionAlias>Age</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>188.25</columnWidth>
+          <columnWidth>301.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,7 +99,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>188.25</columnWidth>
+          <columnWidth>301.25</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -119,7 +119,7 @@
           <factAlias>Eligibility</factAlias>
           <expressionAlias>value</expressionAlias>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>188.25</columnWidth>
+          <columnWidth>301.25</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -145,7 +145,7 @@
               <name>1|1</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;Female&quot;</rawValue>
+            <rawValue class="string">&quot;Mail&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -156,7 +156,7 @@
               <name>1|2</name>
               <type>GIVEN</type>
             </expressionIdentifier>
-            <rawValue class="string">70</rawValue>
+            <rawValue class="string">45</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
