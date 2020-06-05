@@ -15,7 +15,7 @@
             <dmn:text>cc.EligibilityDecisionService</dmn:text>
           </dmn:literalExpression>
           <dmn:binding>
-            <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="cc.Customer" typeRef="cc.tPerson"/>
+            <dmn:parameter id="_8AA2A2CF-6DCE-4333-84AB-06D2927402C5" name="cc.Customer"/>
             <dmn:literalExpression id="_A4DB535B-E384-4D02-B257-90008506BA25">
               <dmn:text>Customer</dmn:text>
             </dmn:literalExpression>
@@ -52,7 +52,7 @@
   </dmn:decision>
   <dmn:inputData id="_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_C1E235E5-0097-45F7-97F6-8207EA07EF69" name="Customer" typeRef="cc.tPerson"/>
+    <dmn:variable id="_C1E235E5-0097-45F7-97F6-8207EA07EF69" name="Customer"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
@@ -86,7 +86,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="264" y="151" width="148" height="50"/>
+        <dc:Bounds x="264" y="150" width="148" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" dmnElementRef="_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" isCollapsed="false">
@@ -100,7 +100,7 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_1466A949-0852-42A9-996E-BF1A034A2452" dmnElementRef="_1466A949-0852-42A9-996E-BF1A034A2452">
         <di:waypoint x="337" y="329"/>
-        <di:waypoint x="338" y="176"/>
+        <di:waypoint x="338" y="175"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
