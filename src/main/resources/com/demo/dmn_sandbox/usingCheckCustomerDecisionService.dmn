@@ -8,9 +8,6 @@
     <dmn:informationRequirement id="_1466A949-0852-42A9-996E-BF1A034A2452">
       <dmn:requiredInput href="#_609E2054-D5C3-48E0-AAB7-DAD71292E8F7"/>
     </dmn:informationRequirement>
-    <dmn:knowledgeRequirement id="_033F5A45-3945-49D7-ACF1-285C880BD077">
-      <dmn:requiredKnowledge href="https://kiegroup.org/dmn/_1D74DD40-D082-4234-BC3D-4636809D5CB5#_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6"/>
-    </dmn:knowledgeRequirement>
     <dmn:context id="_A1C9506E-22BA-42F1-937E-426A544AE57E">
       <dmn:contextEntry>
         <dmn:variable id="_6064DC5A-9BD4-44F6-BC62-291A5601A51D" name="Eligibility" typeRef="boolean"/>
@@ -93,19 +90,6 @@
         <dc:Bounds x="264" y="151" width="148" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" dmnElementRef="included1:_DBDA55FF-423E-4D5E-A217-ADE3917AF5D6" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="471" y="163" width="208" height="100"/>
-        <dmndi:DMNLabel/>
-        <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="471" y="213"/>
-          <di:waypoint x="679" y="213"/>
-        </dmndi:DMNDecisionServiceDividerLine>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" dmnElementRef="_609E2054-D5C3-48E0-AAB7-DAD71292E8F7" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -117,10 +101,6 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_1466A949-0852-42A9-996E-BF1A034A2452" dmnElementRef="_1466A949-0852-42A9-996E-BF1A034A2452">
         <di:waypoint x="337" y="329"/>
-        <di:waypoint x="338" y="176"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_033F5A45-3945-49D7-ACF1-285C880BD077" dmnElementRef="_033F5A45-3945-49D7-ACF1-285C880BD077">
-        <di:waypoint x="575" y="213"/>
         <di:waypoint x="338" y="176"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
