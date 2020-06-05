@@ -54,7 +54,7 @@
           <expressionAlias>Gender</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>301.25</columnWidth>
+          <columnWidth>232.95357436318818</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -78,7 +78,7 @@
           <expressionAlias>Age</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>301.25</columnWidth>
+          <columnWidth>232.95357436318818</columnWidth>
         </FactMapping>
         <FactMapping>
           <expressionElements>
@@ -99,27 +99,7 @@
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>301.25</columnWidth>
-        </FactMapping>
-        <FactMapping>
-          <expressionElements>
-            <ExpressionElement>
-              <step>Eligibility</step>
-            </ExpressionElement>
-          </expressionElements>
-          <expressionIdentifier>
-            <name>1591344358030</name>
-            <type>EXPECT</type>
-          </expressionIdentifier>
-          <factIdentifier>
-            <name>Eligibility</name>
-            <className>.Eligibility</className>
-          </factIdentifier>
-          <className>boolean</className>
-          <factAlias>Eligibility</factAlias>
-          <expressionAlias>value</expressionAlias>
-          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
-          <columnWidth>301.25</columnWidth>
+          <columnWidth>287.09285127362364</columnWidth>
         </FactMapping>
       </factMappings>
     </scesimModelDescriptor>
@@ -179,17 +159,6 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">1</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>Eligibility</name>
-              <className>.Eligibility</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1591344358030</name>
-              <type>EXPECT</type>
-            </expressionIdentifier>
-            <rawValue class="string">true</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
