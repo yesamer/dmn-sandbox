@@ -166,7 +166,7 @@
               <name>1|3</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">&quot;[27.88]&quot;</rawValue>
+            <rawValue class="string">[{&quot;value&quot;:&quot;27.88&quot;},{&quot;value&quot;:&quot;27.88&quot;}]</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
